@@ -15,6 +15,12 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{sjtumaster-xetex}
   [2009/12/25 v0.2a sjtumaster-xetex document class]
+
+% Add by farseerfc@gmail.com
+\newif\ifCLASSOPTIONbachelor       \CLASSOPTIONbachelor
+
+\DeclareOption{bachelor}{\CLASSOPTIONbachelortrue}
+
 \newif\ifCAST@typeinfo \CAST@typeinfotrue
 \DeclareOption{notypeinfo}{\CAST@typeinfofalse}
 \newif\ifCAST@dvips \CAST@dvipsfalse
@@ -379,7 +385,25 @@
   \fi
 }
 
+\ifCLASSOPTIONbachelor
 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small {\it \includegraphics[width=0.22\textwidth]{logo}}}  % 奇数页左页眉
+\fancyhead[R]{\small {\it \CAST@value@titlemark}}                   % 奇数页左页眉
+\fancyfoot[C]{\small ~第~{\bf\thepage}~页~共~{\pageref{lastpage}}~页~}      % 页脚
+
+
+\fancypagestyle{plain}{% 设置开章页页眉页脚风格(只有页码作为页脚)
+  \fancyhf{}%
+  \fancyhead[L]{\small {\it \includegraphics[width=0.22\textwidth]{logo}}}  % 奇数页左页眉
+  \fancyhead[R]{\small {\it \CAST@value@titlemark}}                   % 奇数页左页眉
+  \fancyfoot[C]{\small ~第~{\bf\thepage}~页~共~{\pageref{lastpage}}~页~}      % 页脚
+  %\renewcommand{\headrulewidth}{0pt}%
+  %\renewcommand{\footrulewidth}{0pt}%
+}
+
+\else
 %_ 页眉页脚
 \pagestyle{fancy}
 \fancyhf{}
@@ -396,6 +420,7 @@
   \renewcommand{\headrulewidth}{0pt}%
   \renewcommand{\footrulewidth}{0pt}%
 }
+\fi
 
 % 每一章的首页也使用fancyhdr的页眉页脚设置
 % \makeatletter
@@ -524,13 +549,37 @@
    {\endlist}
    
 \renewenvironment{thanks}
-  {\chapter{\CAST@label@thanks}}
+  {\chapter{\CAST@label@thanks} \label{lastpage}}
   {}
   
 \newenvironment{symbolnote}
   {\chapter{\CAST@label@symbolnote}}
   {} 
 
+
+\newenvironment{bigabstract}
+ {
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small {\it \includegraphics[width=0.22\textwidth]{logo}}}  % 奇数页左页眉
+\fancyhead[R]{\small {\it \CAST@value@titlemark}}                   % 奇数页左页眉
+\fancyfoot[C]{\small ~第~{\bf\thepage}~页~共~{\pageref{bigabstractlast}}~页~}      % 页脚
+
+
+\fancypagestyle{plain}{% 设置开章页页眉页脚风格(只有页码作为页脚)
+  \fancyhf{}%
+  \fancyhead[L]{\small {\it \includegraphics[width=0.22\textwidth]{logo}}}  % 奇数页左页眉
+  \fancyhead[R]{\small {\it \CAST@value@titlemark}}                   % 奇数页左页眉
+  \fancyfoot[C]{\small ~第~{\bf\thepage}~页~共~{\pageref{bigabstractlast}}~页~}      % 页脚
+  %\renewcommand{\headrulewidth}{0pt}%
+  %\renewcommand{\footrulewidth}{0pt}%
+}
+
+
+  \chapter[\heiti ABSTRACT]{\CAST@value@englishtitle\vskip 20pt\bfseries \CAST@label@englishabstract}
+  \setcounter{page}{1}
+}
+ {\label{bigabstractlast}}
 
 \setcounter{secnumdepth}{4}  % 章节编号深度 (part 对应 -1)
 \setcounter{tocdepth}{2}     % 目录深度 (part 对应 -1)
