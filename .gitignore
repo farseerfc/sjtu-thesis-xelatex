@@ -1,0 +1,12 @@
+body/*.aux
+*.aux
+*.bbl
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.xdv
+diss.pdf
+mythesis.pdf
