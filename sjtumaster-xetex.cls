@@ -224,7 +224,7 @@
 \fi
 \fi
 
-%% enumerate 项目符号，定义新环境enum，项目符号是本科论文要求的（1）、（2）的形式。
+%% enumerate 项目符号，定义新环境enum，项目符号是本科论文要求的（1）、（2）的形式。与包enumitem冲突。
 % Ref: http://www.tug.org/texlive/devsrc/Master/texmf-dist/doc/latex/tools/enumerate.pdf
 % added by farseerfc@gmail.com
 \usepackage{enumerate}

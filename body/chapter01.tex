@@ -297,7 +297,8 @@ reference~文件夹放置的是各章``可能''会被引用的参考文献文件
 \begin{lstlisting}[language={TeX}]
   \textheight 24 true cm
   \addtolength{\voffset}{-2.5cm}
-\end{lstlisting}}
+\end{lstlisting}
+  }
 \end{quote}
 使之基本符合本科学士论文Word模板的页面高度。
 
@@ -311,6 +312,85 @@ reference~文件夹放置的是各章``可能''会被引用的参考文献文件
 \label{subsec:bigabstract}
 根据本科论文模板新版要求，增加大摘要章节于正文的最后。大摘要独立计算页号和总页号。
 大摘要的文件位于body/bigabstract.tex中，采用bigabstract环境。大摘要不需要英文摘要的关键字。
+
+大摘要环境独立于bachelor文档类选项，在硕士论文中如果不需要的话，可以注释掉include语句。
+
+\subsection{项目编号}
+\label{subsec:bachelor_enumerate}
+根据本科论文要求，项目编号全部采用``（1）、（2）''的形式。因此我
+引入enumerate包，在这个包的enumerate环境基础上重新定义新的enum环境，项目编号采用
+格式要求中的``（1）、（2）''这样的形式。保留旧的enumerate环境。可惜包enumrate和包
+enumitem相互冲突。
+
+比如如下的项目列表代码：
+\begin{lstlisting}[language={TeX}]
+\begin{enum}
+\item 项目1
+\item 项目2
+\item 项目3
+\end{enum}
+\end{lstlisting}
+
+产生如下的结果：
+\begin{quate}
+\begin{enum}
+\item 项目1
+\item 项目2
+\item 项目3
+\end{enum}
+\end{quate}
+
+还可以采用enumerate环境对项目编号的格式做细节调整，比如如下的项目列表：
+\begin{lstlisting}[language={TeX}]
+\begin{enumerate}[EX i.]
+  \item one one one one one one one
+        one one one one\label{LA}
+  \item two
+    \begin{enumerate}[{example} a)]
+      \item one of two one of two
+      one of two\label{LB}
+      \item two of two
+  \end{enumerate}
+  \item two of two
+  \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}[{A}-1]
+  \item one\label{LC}
+  \item two
+\end{enumerate}
+\end{lstlisting}
+
+产生如下的结果：
+
+\begin{enumerate}[EX i.]
+  \item one one one one one one one
+        one one one one\label{LA}
+  \item two
+    \begin{enumerate}[{example} a)]
+      \item one of two one of two
+      one of two\label{LB}
+      \item two of two
+  \end{enumerate}
+  \item two of two
+  \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}[{A}-1]
+  \item one\label{LC}
+  \item two
+\end{enumerate}
+
+具体定制细节参考\href{http://www.tug.org/texlive/devsrc/Master/texmf-dist/doc/latex/tools/enumerate.pdf}{The \bf{enumerate} package文档}。
+
+\subsection{其它细节调整}
+\label{subsec:bachelor_other}
+\begin{enum}
+\item 调整图、表、代码的标题字体，从小字号楷体调整为加粗宋体。
+\item 调整摘要字体格式
+\item frontmatter的内容不显示页号
+\item frontmatter的内容不出现在目录中
+\end{enum}
 
 \section{模板更新说明}
 \label{sec:update}
@@ -345,3 +425,28 @@ reference~文件夹放置的是各章``可能''会被引用的参考文献文件
 
 如果你是~\TeX/\LaTeX~方面的专家，也可以直接给我发\href{mailto:wei.jianwen@gmail.com}{邮件}，一起讨论改善模板的方法。
 邮件的主题请加上``latex''字样。此外，模板中的其他纰缪，也欢迎直接来信抱怨。
+
+\section{Git版本管理}
+\label{sec:git}
+
+这个模板的代码除了可以在饮水思源TeX\_LaTeX版获得，还可以从Github获得，鼓励采用
+Git改进这个模板，使之更符合学校的要求。
+
+Github上寄宿的模板地址是：
+\begin{quate}
+https://github.com/farseerfc/sjtu-thesis-xelatex
+\end{quate}
+
+要获取master硕士模板，只需要安装好git工具之后，执行代码：
+\begin{lstlisting}[language="bash"]
+git clone git://github.com/farseerfc/sjtu-thesis-xelatex
+\end{lstlisting}
+
+如果想要获取bachelor本科（学士）模板，在上一句的基础上：
+\begin{lstlisting}[language="bash"]
+git branch bachelor
+git checkout bachelor
+git pull origin bachelor
+\end{lstlisting}
+
+就可以了。详细的Git使用请参考\href{http://www.linuxsir.org/main/doc/git/gittutorcn.htm}{Git 中文教程}
