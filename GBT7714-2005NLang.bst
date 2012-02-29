@@ -2,22 +2,22 @@
 %%% ====================================================================
 %%%  Copyright (C) 2006 Wu Kai
 %%%  @BibTeX-style-file{
-%%%     author          = "å´å‡¯",
-%%%     version         = "1 Beta 2 æµ‹è¯•ç‰ˆ",
+%%%     author          = "Îâ¿­",
+%%%     version         = "1 Beta 2 ²âÊÔ°æ",
 %%%     date            = "2006/5/25 21:17"
 %%%     filename        = "GBT7714-2005N.bst",
-%%%     address         = "ä¸Šæµ·è´¢ç»å¤§å­¦ï¼Œå…¬å…±ç»æµŽä¸Žç®¡ç†å­¦é™¢ï¼Œ200433",
+%%%     address         = "ÉÏº£²Æ¾­´óÑ§£¬¹«¹²¾­¼ÃÓë¹ÜÀíÑ§Ôº£¬200433",
 %%%     email           = "solomonkwu@gmail.com",
-%%%     docstring       = "æœ¬æ–‡ä»¶æ”¹ç¼–è‡ªSake J. Hogeveençš„authordate1.bstæ–‡ä»¶ã€‚
-%%%                        äº§ç”Ÿç¬¦åˆã€ŠGB/T 7714-2005æ–‡åŽå‚è€ƒæ–‡çŒ®è‘—å½•è§„åˆ™ã€‹
-%%%                        é¡ºåºç¼–ç åˆ¶æ ¼å¼çš„æ–‡åŽå‚è€ƒæ–‡çŒ®ã€‚
-%%%                        ä½¿ç”¨æ–¹æ³•:
+%%%     docstring       = "±¾ÎÄ¼þ¸Ä±à×ÔSake J. HogeveenµÄauthordate1.bstÎÄ¼þ¡£
+%%%                        ²úÉú·ûºÏ¡¶GB/T 7714-2005ÎÄºó²Î¿¼ÎÄÏ×ÖøÂ¼¹æÔò¡·
+%%%                        Ë³Ðò±àÂëÖÆ¸ñÊ½µÄÎÄºó²Î¿¼ÎÄÏ×¡£
+%%%                        Ê¹ÓÃ·½·¨:
 %%%                        \usepackage[numbers,sort&compress]{natbib} 
 %%%                        \usepackage{hypernat} 
 %%%                        \bibliographystyle{GBT7714-2005N}"
-%%%      copyright      = "ä½¿ç”¨å‰è¯·æ ¸å¯¹æœ€æ–°çš„ç‰ˆæœ¬ã€‚æ‚¨å¯ä»¥å…è´¹ä½¿ç”¨å’Œä¼ æ’­æœ¬æ–‡ä»¶ï¼ˆGBT7714-2005N.bstï¼‰ã€‚
-%%%                        ä½œè€…ä¿ç•™ä¿®æ”¹çš„æƒåˆ©ï¼Œä»¥ä¿è¯ä¸åŒç‰ˆæœ¬GBT7714-2005N.bstçš„ä¸€è‡´æ€§ã€‚
-%%%                        å¦‚æ‚¨éœ€è¦å¯¹æœ¬æ–‡ä»¶è¿›è¡Œä¿®æ”¹ï¼Œè¯·å¦å­˜ä¸ºå…¶ä»–åå­—ã€‚"
+%%%      copyright      = "Ê¹ÓÃÇ°ÇëºË¶Ô×îÐÂµÄ°æ±¾¡£Äú¿ÉÒÔÃâ·ÑÊ¹ÓÃºÍ´«²¥±¾ÎÄ¼þ£¨GBT7714-2005N.bst£©¡£
+%%%                        ×÷Õß±£ÁôÐÞ¸ÄµÄÈ¨Àû£¬ÒÔ±£Ö¤²»Í¬°æ±¾GBT7714-2005N.bstµÄÒ»ÖÂÐÔ¡£
+%%%                        ÈçÄúÐèÒª¶Ô±¾ÎÄ¼þ½øÐÐÐÞ¸Ä£¬ÇëÁí´æÎªÆäËûÃû×Ö¡£"
 %%% ====================================================================
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -45,23 +45,23 @@ ENTRY
     volume
     year
     url
-    TypeofLit                %æ–°åŠ å…¥ï¼šæ–‡çŒ®ç±»åž‹å’Œæ ‡å¿—ä»£ç 
-    normalauthor             %ä¸æ”¹å˜å¤§å°å†™çš„ä½œè€…
-    normaleditor             %ä¸æ”¹å˜å¤§å°å†™çš„ç¼–è€…
-    translator               %æ–°åŠ å…¥ï¼šç¿»è¯‘è€…
-    date                     %æ—¥æœŸï¼Œå…¬å‘Šæ—¥æœŸï¼Œå…¬å¼€æ—¥æœŸ
-    modifydate               %ä¿®æ”¹æ—¥æœŸ
-    citedate                 %å¼•ç”¨æ—¥æœŸ
-    patentid                 %ä¸“åˆ©å·
-    country                  %å›½å®¶ï¼ˆä¸»è¦ç”¨äºŽä¸“åˆ©ä¸­ï¼‰
-    miscyear                 %å…¶å®ƒç±»ä¸­ç”¨äºŽè¾“å‡ºå¹´ä»½
-    startyear                %èµ·å§‹å¹´
-    startvolume              %èµ·å§‹å·
-    startnumber              %èµ·å§‹æœŸ
-    endyear                  %ç»ˆæ­¢å¹´
-    endvolume                %ç»ˆæ­¢å·
-    endnumber                %ç»ˆæ­¢æœŸ
-    language                 %é»˜è®¤æ˜¯è‹±æ–‡æ–‡çŒ®ï¼Œéžç©ºåˆ™è¡¨æ˜Žæ˜¯ä¸­æ–‡æ–‡çŒ®
+    TypeofLit                %ÐÂ¼ÓÈë£ºÎÄÏ×ÀàÐÍºÍ±êÖ¾´úÂë
+    normalauthor             %²»¸Ä±ä´óÐ¡Ð´µÄ×÷Õß
+    normaleditor             %²»¸Ä±ä´óÐ¡Ð´µÄ±àÕß
+    translator               %ÐÂ¼ÓÈë£º·­ÒëÕß
+    date                     %ÈÕÆÚ£¬¹«¸æÈÕÆÚ£¬¹«¿ªÈÕÆÚ
+    modifydate               %ÐÞ¸ÄÈÕÆÚ
+    citedate                 %ÒýÓÃÈÕÆÚ
+    patentid                 %×¨ÀûºÅ
+    country                  %¹ú¼Ò£¨Ö÷ÒªÓÃÓÚ×¨ÀûÖÐ£©
+    miscyear                 %ÆäËüÀàÖÐÓÃÓÚÊä³öÄê·Ý
+    startyear                %ÆðÊ¼Äê
+    startvolume              %ÆðÊ¼¾í
+    startnumber              %ÆðÊ¼ÆÚ
+    endyear                  %ÖÕÖ¹Äê
+    endvolume                %ÖÕÖ¹¾í
+    endnumber                %ÖÕÖ¹ÆÚ
+    language                 %Ä¬ÈÏÊÇÓ¢ÎÄÎÄÏ×£¬·Ç¿ÕÔò±íÃ÷ÊÇÖÐÎÄÎÄÏ×
   }
   {}
   { label extra.label sort.label short.list }
@@ -110,7 +110,7 @@ FUNCTION {output.nonnull}
 FUNCTION {coutput.nonnull}                                   %wk
 { 's :=
   output.state mid.sentence =
-    { "ï¼Œ" * write$ }                                       %
+    { "£¬" * write$ }                                       %
     { output.state after.block =
     { add.period$ write$
       newline$
@@ -481,7 +481,7 @@ FUNCTION {format.names}
                 { pop$ }
               if$
               t "others" =
-                 {bib.name.font    %æ”¹ä¸ºå¤§å†™
+                 {bib.name.font    %¸ÄÎª´óÐ´
                   ", et al" * 
                 }
                 {", " * t * } 
@@ -496,10 +496,10 @@ FUNCTION {format.names}
     }
   while$
 %%%%%%%%%%%
-  t "others" =                   %æ”¹ä¸ºå¤§å†™ 
-    'skip$                       %æ”¹ä¸ºå¤§å†™ 
-    { bib.name.font }            %æ”¹ä¸ºå¤§å†™ 
-  if$                            %æ”¹ä¸ºå¤§å†™ 
+  t "others" =                   %¸ÄÎª´óÐ´ 
+    'skip$                       %¸ÄÎª´óÐ´ 
+    { bib.name.font }            %¸ÄÎª´óÐ´ 
+  if$                            %¸ÄÎª´óÐ´ 
 %%%%%%%%%%%
 }
 
@@ -534,8 +534,8 @@ FUNCTION {format.cnames}                                     %wk
                 { pop$ }
               if$
               t "others" =
-                 { ",ç­‰" * 
-                bib.name.font    %æ”¹ä¸ºå¤§å†™
+                 { ",µÈ" * 
+                bib.name.font    %¸ÄÎª´óÐ´
                 }
                 {", " * t * } 
               if$
@@ -549,15 +549,15 @@ FUNCTION {format.cnames}                                     %wk
     }
   while$
 %%%%%%%%%%%
-  t "others" =                   %æ”¹ä¸ºå¤§å†™ 
-    'skip$                       %æ”¹ä¸ºå¤§å†™ 
-    { bib.name.font }            %æ”¹ä¸ºå¤§å†™ 
-  if$                            %æ”¹ä¸ºå¤§å†™ 
+  t "others" =                   %¸ÄÎª´óÐ´ 
+    'skip$                       %¸ÄÎª´óÐ´ 
+    { bib.name.font }            %¸ÄÎª´óÐ´ 
+  if$                            %¸ÄÎª´óÐ´ 
 %%%%%%%%%%%
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%ä¸åŠ å¤§å†™çš„åå­—
+%²»¼Ó´óÐ´µÄÃû×Ö
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 FUNCTION {format.normal.names}
@@ -636,7 +636,7 @@ FUNCTION {format.normal.cnames}                                    %wk
                 { pop$ }
               if$
               t "others" =
-                 { ",ç­‰" * }
+                 { ",µÈ" * }
                 {", " * t * } 
               if$
             }
@@ -695,7 +695,7 @@ FUNCTION {format.editors}
   if$
 }
 
-FUNCTION {format.ceditors}                                 %wk   æœ¬å‡½æ•°
+FUNCTION {format.ceditors}                                 %wk   ±¾º¯Êý
 { editor empty$
     { "" }
     {
@@ -797,12 +797,12 @@ if$
 FUNCTION {format.misc.title}                %wk                 %  Nothing needs
 {
 patentid empty$
-       {%æ²¡æœ‰ä¸“åˆ©å·åº”è¯¥æ˜¯å…¶å®ƒç±»åž‹æ–‡çŒ®ï¼Œç›´æŽ¥æ ‡å‡†è¾“å‡º
+       {%Ã»ÓÐ×¨ÀûºÅÓ¦¸ÃÊÇÆäËüÀàÐÍÎÄÏ×£¬Ö±½Ó±ê×¼Êä³ö
 title empty$                                              %  doing here in
     { "" }                                                  %  authordate1.bst
     {
     typeoflit empty$
-       {format.title "[ç¼ºæ–‡çŒ®ç±»åž‹æ ‡å¿—ä»£ç ]." * title output.check}   
+       {format.title "[È±ÎÄÏ×ÀàÐÍ±êÖ¾´úÂë]." * title output.check}   
        {format.title title output.check}
     if$
     }
@@ -812,14 +812,14 @@ TypeofLit empty$
        { "["  TypeofLit * "]." * * }
 if$
        }
-       {%æœ‰ä¸“åˆ©å·
+       {%ÓÐ×¨ÀûºÅ
           country empty$
              {
 title empty$                                              %  doing here in
     { "" }                                                  %  authordate1.bst
     {
     typeoflit empty$
-       {format.title "[ç¼ºæ–‡çŒ®ç±»åž‹æ ‡å¿—ä»£ç ]." * title output.check}   
+       {format.title "[È±ÎÄÏ×ÀàÐÍ±êÖ¾´úÂë]." * title output.check}   
        {format.title title output.check}
     if$
     }
@@ -830,18 +830,18 @@ TypeofLit empty$
 if$             
 ""  patentid * "" * *              
              }   
-             {%æœ‰ä¸“åˆ©å·ï¼Œæœ‰å›½å®¶
+             {%ÓÐ×¨ÀûºÅ£¬ÓÐ¹ú¼Ò
 title empty$                                              %  doing here in
     { "" }                                                  %  authordate1.bst
     {
     typeoflit empty$
-       {format.title "[ç¼ºæ–‡çŒ®ç±»åž‹æ ‡å¿—ä»£ç ]." * title output.check}   
+       {format.title "[È±ÎÄÏ×ÀàÐÍ±êÖ¾´úÂë]." * title output.check}   
        {format.title title output.check}
     if$
     }
 if$
              
-              "ï¼š"  country * "ï¼Œ" * * 
+              "£º"  country * "£¬" * * 
               ""  patentid * "" * * 
 TypeofLit empty$
        {""}   
@@ -859,12 +859,12 @@ if$
 FUNCTION {format.cmisc.title}                %wk                 %  Nothing needs
 {
 patentid empty$
-       {%æ²¡æœ‰ä¸“åˆ©å·åº”è¯¥æ˜¯å…¶å®ƒç±»åž‹æ–‡çŒ®ï¼Œç›´æŽ¥æ ‡å‡†è¾“å‡º
+       {%Ã»ÓÐ×¨ÀûºÅÓ¦¸ÃÊÇÆäËüÀàÐÍÎÄÏ×£¬Ö±½Ó±ê×¼Êä³ö
 title empty$                                              %  doing here in
     { "" }                                                  %  authordate1.bst
     {
     typeoflit empty$
-       {format.title "[ç¼ºæ–‡çŒ®ç±»åž‹æ ‡å¿—ä»£ç ]." * title output.check}   
+       {format.title "[È±ÎÄÏ×ÀàÐÍ±êÖ¾´úÂë]." * title output.check}   
        {format.title title output.check}
     if$
     }
@@ -874,14 +874,14 @@ TypeofLit empty$
        { "["  TypeofLit * "]." * * }
 if$
        }
-       {%æœ‰ä¸“åˆ©å·
+       {%ÓÐ×¨ÀûºÅ
           country empty$
              {
 title empty$                                              %  doing here in
     { "" }                                                  %  authordate1.bst
     {
     typeoflit empty$
-       {format.title "[ç¼ºæ–‡çŒ®ç±»åž‹æ ‡å¿—ä»£ç ]." * title output.check}   
+       {format.title "[È±ÎÄÏ×ÀàÐÍ±êÖ¾´úÂë]." * title output.check}   
        {format.title title output.check}
     if$
     }
@@ -892,18 +892,18 @@ TypeofLit empty$
 if$             
 ""  patentid * "" * *              
              }   
-             {%æœ‰ä¸“åˆ©å·ï¼Œæœ‰å›½å®¶
+             {%ÓÐ×¨ÀûºÅ£¬ÓÐ¹ú¼Ò
 title empty$                                              %  doing here in
     { "" }                                                  %  authordate1.bst
     {
     typeoflit empty$
-       {format.title "[ç¼ºæ–‡çŒ®ç±»åž‹æ ‡å¿—ä»£ç ]." * title output.check}   
+       {format.title "[È±ÎÄÏ×ÀàÐÍ±êÖ¾´úÂë]." * title output.check}   
        {format.title title output.check}
     if$
     }
 if$
              
-              "ï¼š"  country * "ï¼Œ" * * 
+              "£º"  country * "£¬" * * 
               ""  patentid * "" * * 
 TypeofLit empty$
        {""}   
@@ -1123,8 +1123,8 @@ FUNCTION {format.cnumberinseries}                           %wk
 { number empty$
     { "" }
     { number multi.page.check
-        { ", ç¬¬" number n.dashify tie.or.space.connect * "æœŸ"}  %wk
-        { ", ç¬¬"  number tie.or.space.connect * "æœŸ"}           %wk
+        { ", µÚ" number n.dashify tie.or.space.connect * "ÆÚ"}  %wk
+        { ", µÚ"  number tie.or.space.connect * "ÆÚ"}           %wk
       if$
     }
   if$
@@ -1154,18 +1154,18 @@ FUNCTION {booklike.series.volume.number}                    %  Chicago, pages
   if$
 }
 
-FUNCTION {cbooklike.series.volume.number.pages}           %wkåŠ å…¥é¡µç  ï¼Ÿï¼Ÿï¼Ÿ        %  Chicago, pages           %wk
+FUNCTION {cbooklike.series.volume.number.pages}           %wk¼ÓÈëÒ³Âë £¿£¿£¿        %  Chicago, pages           %wk
 { series empty$                                             %  450-451.
     { volume empty$
       {  pages empty$
     'skip$
     { duplicate$ empty$
         { pop$ format.pages }
-        { ":" * pages n.dashify * "" *}                                   %wk æ”¹ä¸ºç¬¬é¡µ
+        { ":" * pages n.dashify * "" *}                                   %wk ¸ÄÎªµÚÒ³
       if$
     }
   if$}
-      { "å·" volume * }
+      { "¾í" volume * }
       if$
     }
     {
@@ -1176,8 +1176,8 @@ FUNCTION {cbooklike.series.volume.number.pages}           %wkåŠ å…¥é¡µç  ï¼Ÿï¼Ÿ
           if$
         }
         { number empty$
-            { series "ï¼Œç¬¬" volume * "å·" * * }
-            { series "å·" * volume * format.cnumberinseries * }
+            { series "£¬µÚ" volume * "¾í" * * }
+            { series "¾í" * volume * format.cnumberinseries * }
           if$
         }
       if$
@@ -1192,16 +1192,16 @@ FUNCTION {incollectionlike.series.volume.number.pages}             %wk
     'skip$
     { duplicate$ empty$
         { pop$ format.pages }
-        { ":" * pages n.dashify * "" *}                                   %wk æ”¹ä¸ºç¬¬é¡µ
+        { ":" * pages n.dashify * "" *}                                   %wk ¸ÄÎªµÚÒ³
       if$
     }
   if$}
-      { "ï¼Œ" volume * ""  * *
+      { "£¬" volume * ""  * *
         pages empty$
     'skip$
     { duplicate$ empty$
         { pop$ format.pages }
-        { ":" * pages n.dashify * "" *}                                   %wk æ”¹ä¸ºç¬¬é¡µ
+        { ":" * pages n.dashify * "" *}                                   %wk ¸ÄÎªµÚÒ³
       if$
     }
   if$}
@@ -1231,16 +1231,16 @@ FUNCTION {cincollectionlike.series.volume.number.pages}             %wk
     'skip$
     { duplicate$ empty$
         { pop$ format.pages }
-        { ":" * pages n.dashify * "" *}                                   %wk æ”¹ä¸ºç¬¬é¡µ
+        { ":" * pages n.dashify * "" *}                                   %wk ¸ÄÎªµÚÒ³
       if$
     }
   if$}
-      { "ï¼Œç¬¬" volume * "å·"  * *
+      { "£¬µÚ" volume * "¾í"  * *
         pages empty$
     'skip$
     { duplicate$ empty$
         { pop$ format.pages }
-        { ":" * pages n.dashify * "" *}                                   %wk æ”¹ä¸ºç¬¬é¡µ
+        { ":" * pages n.dashify * "" *}                                   %wk ¸ÄÎªµÚÒ³
       if$
     }
   if$}
@@ -1264,7 +1264,7 @@ FUNCTION {cincollectionlike.series.volume.number.pages}             %wk
 }
 
 
-FUNCTION {format.TypeofLit}                                  %wk  å®Œå…¨æ”¹å†™
+FUNCTION {format.TypeofLit}                                  %wk  ÍêÈ«¸ÄÐ´
 { TypeofLit empty$
     { "" }
     {"[" TypeofLit * "]" *}
@@ -1277,33 +1277,33 @@ FUNCTION {format.edition}
     {
       translator empty$
         { "" }
-        {"" translator * "ï¼Œtranslation" * }
+        {"" translator * "£¬translation" * }
         if$
     }
     {
       translator empty$
          {edition}
          {translator output
-          "ï¼Œtranslation." edition * "" * *}
+          "£¬translation." edition * "" * *}
          if$
     }     
 if$
 }
 
 
-FUNCTION {format.cedition}                                  %wk  å®Œå…¨æ”¹å†™
+FUNCTION {format.cedition}                                  %wk  ÍêÈ«¸ÄÐ´
 { edition empty$
     {
       translator empty$
         { "" }
-        {"" translator format.cnames * "ï¼Œè¯‘" *}
+        {"" translator format.cnames * "£¬Òë" *}
         if$
     }
     {
       translator empty$
          {edition}
          {translator format.cnames output
-          "ï¼Œè¯‘." edition * "" * *}
+          "£¬Òë." edition * "" * *}
          if$
     }     
 if$
@@ -1312,10 +1312,10 @@ if$
 
 
 
-FUNCTION {format.ctranslator}                                  %wk  å®Œå…¨æ”¹å†™
+FUNCTION {format.ctranslator}                                  %wk  ÍêÈ«¸ÄÐ´
 { translator empty$
     { "" }
-    {format.cnames "ï¼Œè¯‘" * "translator" output.check}
+    {format.cnames "£¬Òë" * "translator" output.check}
     if$
 }
     
@@ -1355,25 +1355,25 @@ FUNCTION {format.cpagesinbook}                              %  By the time the  
    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 FUNCTION {format.vol.num.date.pages}                       %wk  
-{volume empty$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    {volume                                         %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  if$                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  number empty$                                                       %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    { "(" number * ")" * *                                          %wk  è¢«é‡æ–°æ”¹è¿‡
-      volume empty$                                                   %wk  è¢«é‡æ–°æ”¹è¿‡
-        { "there's a number but no volume in " cite$ * warning$ }     %wk  è¢«é‡æ–°æ”¹è¿‡
-        'skip$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-      if$                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  if$                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+{volume empty$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    {volume                                         %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  if$                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  number empty$                                                       %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    { "(" number * ")" * *                                          %wk  ±»ÖØÐÂ¸Ä¹ý
+      volume empty$                                                   %wk  ±»ÖØÐÂ¸Ä¹ý
+        { "there's a number but no volume in " cite$ * warning$ }     %wk  ±»ÖØÐÂ¸Ä¹ý
+        'skip$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+      if$                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  if$                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
   pages empty$
     'skip$
     { duplicate$ empty$
         { pop$ format.pages }
-        { ":" * pages n.dashify * "" *}                                   %wk æ”¹ä¸ºç¬¬é¡µ
+        { ":" * pages n.dashify * "" *}                                   %wk ¸ÄÎªµÚÒ³
       if$
     }
   if$
@@ -1381,25 +1381,25 @@ FUNCTION {format.vol.num.date.pages}                       %wk
 
 
 FUNCTION {format.cvol.num.date.pages}                       %wk  
-{volume empty$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    {volume                                         %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  if$                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  number empty$                                                       %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    { "(" number * ")" * *                                          %wk  è¢«é‡æ–°æ”¹è¿‡
-      volume empty$                                                   %wk  è¢«é‡æ–°æ”¹è¿‡
-        { "there's a number but no volume in " cite$ * warning$ }     %wk  è¢«é‡æ–°æ”¹è¿‡
-        'skip$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-      if$                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  if$                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+{volume empty$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    {volume                                         %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  if$                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  number empty$                                                       %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    { "(" number * ")" * *                                          %wk  ±»ÖØÐÂ¸Ä¹ý
+      volume empty$                                                   %wk  ±»ÖØÐÂ¸Ä¹ý
+        { "there's a number but no volume in " cite$ * warning$ }     %wk  ±»ÖØÐÂ¸Ä¹ý
+        'skip$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+      if$                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  if$                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
   pages empty$
     'skip$
     { duplicate$ empty$
         { pop$ format.pages }
-        { ":" * pages n.dashify * "" *}                                   %wk æ”¹ä¸ºç¬¬é¡µ
+        { ":" * pages n.dashify * "" *}                                   %wk ¸ÄÎªµÚÒ³
       if$
     }
   if$
@@ -1408,25 +1408,25 @@ FUNCTION {format.cvol.num.date.pages}                       %wk
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 FUNCTION {format.article.vol.num.date.pages}                       %wk  
 {
-volume empty$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    {volume                                         %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  if$                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-number empty$                                                       %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    { "(" number * ")" * *                                          %wk  è¢«é‡æ–°æ”¹è¿‡
-      volume empty$                                                   %wk  è¢«é‡æ–°æ”¹è¿‡
-        { "there's a number but no volume in " cite$ * warning$ }     %wk  è¢«é‡æ–°æ”¹è¿‡
-        'skip$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-      if$                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  if$                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+volume empty$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    {volume                                         %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  if$                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+number empty$                                                       %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    { "(" number * ")" * *                                          %wk  ±»ÖØÐÂ¸Ä¹ý
+      volume empty$                                                   %wk  ±»ÖØÐÂ¸Ä¹ý
+        { "there's a number but no volume in " cite$ * warning$ }     %wk  ±»ÖØÐÂ¸Ä¹ý
+        'skip$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+      if$                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  if$                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
   pages empty$
     'skip$
     { duplicate$ empty$
         { pop$ format.pages }
-        { ":" * pages n.dashify * "" *}                                   %wk æ”¹ä¸ºç¬¬é¡µ
+        { ":" * pages n.dashify * "" *}                                   %wk ¸ÄÎªµÚÒ³
       if$
     }
   if$       
@@ -1436,25 +1436,25 @@ number empty$                                                       %wk  è¢«é‡æ
 
 FUNCTION {format.carticle.vol.num.date.pages}                       %wk  
 {
-volume empty$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    {volume                                         %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  if$                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-number empty$                                                       %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    { "(" number * ")" * *                                          %wk  è¢«é‡æ–°æ”¹è¿‡
-      volume empty$                                                   %wk  è¢«é‡æ–°æ”¹è¿‡
-        { "there's a number but no volume in " cite$ * warning$ }     %wk  è¢«é‡æ–°æ”¹è¿‡
-        'skip$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-      if$                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  if$                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+volume empty$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    {volume                                         %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  if$                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+number empty$                                                       %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    { "(" number * ")" * *                                          %wk  ±»ÖØÐÂ¸Ä¹ý
+      volume empty$                                                   %wk  ±»ÖØÐÂ¸Ä¹ý
+        { "there's a number but no volume in " cite$ * warning$ }     %wk  ±»ÖØÐÂ¸Ä¹ý
+        'skip$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+      if$                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  if$                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
   pages empty$
     'skip$
     { duplicate$ empty$
         { pop$ format.pages }
-        { ":" * pages n.dashify * "" *}                                   %wk æ”¹ä¸ºç¬¬é¡µ
+        { ":" * pages n.dashify * "" *}                                   %wk ¸ÄÎªµÚÒ³
       if$
     }
   if$       
@@ -1467,31 +1467,31 @@ FUNCTION {format.book.continue.vol.num}                       %wk
 startyear empty$
     'skip$
     {"." startyear * "" * *
-    startvolume empty$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    {"," startvolume * "" *  *}                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+    startvolume empty$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    {"," startvolume * "" *  *}                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
      if$         
-                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    startnumber empty$                                                       %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    { "(" startnumber * ")-" * *  }                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-      if$                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    startnumber empty$                                                       %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    { "(" startnumber * ")-" * *  }                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+      if$                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
 if$    
-                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
+                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
 endyear empty$
     'skip$
     {"" endyear * "" * *
-    endvolume empty$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    {"," endvolume * "" *  *}                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+    endvolume empty$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    {"," endvolume * "" *  *}                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
      if$         
-                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    endnumber empty$                                                       %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    { "(" endnumber * ")" * *  }                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-      if$                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    endnumber empty$                                                       %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    { "(" endnumber * ")" * *  }                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+      if$                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
 if$  
 }
 
@@ -1503,31 +1503,31 @@ FUNCTION {format.cbook.continue.vol.num}                       %wk
 startyear empty$
     'skip$
     {"." startyear * "" * *
-    startvolume empty$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    {"," startvolume * "" *  *}                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+    startvolume empty$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    {"," startvolume * "" *  *}                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
      if$         
-                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    startnumber empty$                                                       %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    { "(" startnumber * ")-" * *  }                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-      if$                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    startnumber empty$                                                       %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    { "(" startnumber * ")-" * *  }                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+      if$                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
 if$    
-                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
+                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
 endyear empty$
     'skip$
     {"" endyear * "" * *
-    endvolume empty$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    {"," endvolume * "" *  *}                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+    endvolume empty$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    {"," endvolume * "" *  *}                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
      if$         
-                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    endnumber empty$                                                       %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    { "(" endnumber * ")" * *  }                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-      if$                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    endnumber empty$                                                       %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    { "(" endnumber * ")" * *  }                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+      if$                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
 if$  
 }
 
@@ -1536,30 +1536,30 @@ if$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 FUNCTION {format.date.modifydate.citedate}                       %wk  
 {
-date empty$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    {date                                         %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  if$                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+date empty$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    {date                                         %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  if$                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
 
-modifydate empty$                                                       %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    { "(" modifydate * ")" * *                                          %wk  è¢«é‡æ–°æ”¹è¿‡
-      date empty$                                                   %wk  è¢«é‡æ–°æ”¹è¿‡
-        { "" cite$ * warning$ }     %wk  è¢«é‡æ–°æ”¹è¿‡
-        'skip$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-      if$                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+modifydate empty$                                                       %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    { "(" modifydate * ")" * *                                          %wk  ±»ÖØÐÂ¸Ä¹ý
+      date empty$                                                   %wk  ±»ÖØÐÂ¸Ä¹ý
+        { "" cite$ * warning$ }     %wk  ±»ÖØÐÂ¸Ä¹ý
+        'skip$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+      if$                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
   if$
   
-citedate empty$                                                       %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    { "[" citedate * "]" * *                                         %wk  è¢«é‡æ–°æ”¹è¿‡
-      date empty$                                                   %wk  è¢«é‡æ–°æ”¹è¿‡
-        { "" cite$ * warning$ }     %wk  è¢«é‡æ–°æ”¹è¿‡
-        'skip$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-      if$                                                             %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+citedate empty$                                                       %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    { "[" citedate * "]" * *                                         %wk  ±»ÖØÐÂ¸Ä¹ý
+      date empty$                                                   %wk  ±»ÖØÐÂ¸Ä¹ý
+        { "" cite$ * warning$ }     %wk  ±»ÖØÐÂ¸Ä¹ý
+        'skip$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+      if$                                                             %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
   if$ 
 }
 
@@ -1582,16 +1582,16 @@ FUNCTION {format.chapter.pages.inbook}
 }
 
 FUNCTION {format.cchapter.pages.inbook} 
-{chapter empty$                                                        %wk  è¢«é‡æ–°æ”¹è¿‡
-    'skip$                                                            %wk  è¢«é‡æ–°æ”¹è¿‡
-    { "ï¼Œç¬¬" chapter * "ç« " * *                                          %wk  è¢«é‡æ–°æ”¹è¿‡
-    }                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
-  if$                                                                 %wk  è¢«é‡æ–°æ”¹è¿‡
+{chapter empty$                                                        %wk  ±»ÖØÐÂ¸Ä¹ý
+    'skip$                                                            %wk  ±»ÖØÐÂ¸Ä¹ý
+    { "£¬µÚ" chapter * "ÕÂ" * *                                          %wk  ±»ÖØÐÂ¸Ä¹ý
+    }                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
+  if$                                                                 %wk  ±»ÖØÐÂ¸Ä¹ý
   pages empty$
     'skip$
     { duplicate$ empty$
         { pop$ format.pages }
-        { ":" * pages n.dashify * "" *}                                   %wk æ”¹ä¸ºç¬¬é¡µ
+        { ":" * pages n.dashify * "" *}                                   %wk ¸ÄÎªµÚÒ³
       if$
     }
   if$
@@ -1622,11 +1622,11 @@ FUNCTION {format.cchapter.pages.incoll}                       %wk
 { chapter empty$
     { pages empty$
         { "" }
-        { "ç¬¬" format.pagesinbook "ç« " * * }
+        { "µÚ" format.pagesinbook "ÕÂ" * * }
       if$
     }
     { type empty$
-        { "ç¬¬" chapter * "ç« " * * }
+        { "µÚ" chapter * "ÕÂ" * * }
         { "" type * "" * chapter * }
       if$
       pages empty$
@@ -1645,21 +1645,21 @@ FUNCTION {format.in.ed.booktitle}                           %  Achieves effect  
           new.block
          }
         {new.block
-    normalauthor empty$                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
+    normalauthor empty$                           %ÓÃÓÚÕý³£ÏÔÊ¾
          {
-    normaleditor empty$                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-         {      format.editors  "author and editor" output.check}       %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º,
-         {      format.editors  "author and normaleditor" output.check} %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-    if$                                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º            
-         }                   %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
+    normaleditor empty$                           %ÓÃÓÚÕý³£ÏÔÊ¾
+         {      format.editors  "author and editor" output.check}       %ÓÃÓÚÕý³£ÏÔÊ¾,
+         {      format.editors  "author and normaleditor" output.check} %ÓÃÓÚÕý³£ÏÔÊ¾
+    if$                                           %ÓÃÓÚÕý³£ÏÔÊ¾            
+         }                   %ÓÃÓÚÕý³£ÏÔÊ¾
          {
-    normaleditor empty$                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-         {format.editors  "normalauthor and editor" output.check}                   %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-         {format.editors  "normalauthor and normaleditor" output.check}       %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-    if$                                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º   
+    normaleditor empty$                           %ÓÃÓÚÕý³£ÏÔÊ¾
+         {format.editors  "normalauthor and editor" output.check}                   %ÓÃÓÚÕý³£ÏÔÊ¾
+         {format.editors  "normalauthor and normaleditor" output.check}       %ÓÃÓÚÕý³£ÏÔÊ¾
+    if$                                           %ÓÃÓÚÕý³£ÏÔÊ¾   
          
-         }       %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-    if$                                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
+         }       %ÓÃÓÚÕý³£ÏÔÊ¾
+    if$                                           %ÓÃÓÚÕý³£ÏÔÊ¾
       editor format.key output
       new.block
       format.btitle "booktitle" output.check  
@@ -1678,21 +1678,21 @@ FUNCTION {format.in.ced.booktitle}                           %  Achieves effect 
           new.block
          }
         {new.block
-    normalauthor empty$                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
+    normalauthor empty$                           %ÓÃÓÚÕý³£ÏÔÊ¾
          {
-    normaleditor empty$                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-         {format.ceditors  "author and editor" output.check}       %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º,
-         {format.ceditors  "author and normaleditor" output.check} %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-    if$                                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º            
-         }                   %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
+    normaleditor empty$                           %ÓÃÓÚÕý³£ÏÔÊ¾
+         {format.ceditors  "author and editor" output.check}       %ÓÃÓÚÕý³£ÏÔÊ¾,
+         {format.ceditors  "author and normaleditor" output.check} %ÓÃÓÚÕý³£ÏÔÊ¾
+    if$                                           %ÓÃÓÚÕý³£ÏÔÊ¾            
+         }                   %ÓÃÓÚÕý³£ÏÔÊ¾
          {
-    normaleditor empty$                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-         {format.ceditors  "normalauthor and editor" output.check}                   %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-         {format.ceditors  "normalauthor and normaleditor" output.check}       %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-    if$                                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º   
+    normaleditor empty$                           %ÓÃÓÚÕý³£ÏÔÊ¾
+         {format.ceditors  "normalauthor and editor" output.check}                   %ÓÃÓÚÕý³£ÏÔÊ¾
+         {format.ceditors  "normalauthor and normaleditor" output.check}       %ÓÃÓÚÕý³£ÏÔÊ¾
+    if$                                           %ÓÃÓÚÕý³£ÏÔÊ¾   
          
-         }       %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
-    if$                                           %ç”¨äºŽæ­£å¸¸æ˜¾ç¤º
+         }       %ÓÃÓÚÕý³£ÏÔÊ¾
+    if$                                           %ÓÃÓÚÕý³£ÏÔÊ¾
       editor format.key output
       new.block
       format.cbtitle "booktitle" output.check  
@@ -1759,12 +1759,12 @@ FUNCTION {format.addr.pub}
 FUNCTION {format.caddr.pub}
 {publisher empty$
     {address empty$
-        { ".[å‡ºç‰ˆåœ°ä¸è¯¦]ï¼š[å‡ºç‰ˆè€…ä¸è¯¦]" *}
-        { address ":[å‡ºç‰ˆè€…ä¸è¯¦]" * }
+        { ".[³ö°æµØ²»Ïê]£º[³ö°æÕß²»Ïê]" *}
+        { address ":[³ö°æÕß²»Ïê]" * }
       if$
     }
     { address empty$
-        { ".[å‡ºç‰ˆåœ°ä¸è¯¦]ï¼š" * }
+        { ".[³ö°æµØ²»Ïê]£º" * }
         { address ": " * }
       if$
      publisher * 
@@ -1793,12 +1793,12 @@ FUNCTION {format.addr.institution}
 FUNCTION {format.caddr.institution}
 {institution empty$
     {address empty$
-        { ".[åœ°å€ä¸è¯¦]ï¼š[æœºæž„ä¸è¯¦]" *}
-        { address ":[æœºæž„ä¸è¯¦]" * }
+        { ".[µØÖ·²»Ïê]£º[»ú¹¹²»Ïê]" *}
+        { address ":[»ú¹¹²»Ïê]" * }
       if$
     }
     { address empty$
-        { ".[åœ°å€ä¸è¯¦]ï¼š" * }
+        { ".[µØÖ·²»Ïê]£º" * }
         { address ": " * }
       if$
      institution * 
@@ -1827,12 +1827,12 @@ FUNCTION {format.school.pub}
 FUNCTION {format.cschool.pub}
 {school empty$
     {address empty$
-        { "[åœ°å€ä¸è¯¦]ï¼š[å­¦æ ¡ä¸è¯¦]" }
-        { address ":[å­¦æ ¡ä¸è¯¦]" * }
+        { "[µØÖ·²»Ïê]£º[Ñ§Ð£²»Ïê]" }
+        { address ":[Ñ§Ð£²»Ïê]" * }
       if$
     }
     { address empty$
-        { ".[å­¦æ ¡ä¸è¯¦]ï¼š" * }
+        { ".[Ñ§Ð£²»Ïê]£º" * }
         { address ": " * }
       if$
       school *
@@ -1869,12 +1869,12 @@ FUNCTION {format.cinproceedings.addr.pub}
 TypeofLit empty$
        {publisher empty$
     {address empty$
-        { ".[å‡ºç‰ˆåœ°ä¸è¯¦]ï¼š[å‡ºç‰ˆè€…ä¸è¯¦]" }
-        { address ":[å‡ºç‰ˆè€…ä¸è¯¦]" * }
+        { ".[³ö°æµØ²»Ïê]£º[³ö°æÕß²»Ïê]" }
+        { address ":[³ö°æÕß²»Ïê]" * }
       if$
     }
     { address empty$
-        { ".[å‡ºç‰ˆåœ°ä¸è¯¦]ï¼š" * }
+        { ".[³ö°æµØ²»Ïê]£º" * }
         { address ": " * }
       if$
       publisher *
@@ -1907,11 +1907,11 @@ FUNCTION {format.cmisc.addr.pub}
 {publisher empty$
     {address empty$
         { "" }
-        { address ":[å‡ºç‰ˆè€…ä¸è¯¦]" * }
+        { address ":[³ö°æÕß²»Ïê]" * }
       if$
     }
     { address empty$
-        { "[å‡ºç‰ˆåœ°ä¸è¯¦]ï¼š" * }
+        { "[³ö°æµØ²»Ïê]£º" * }
         { address ": " * }
       if$
       publisher *
@@ -1935,7 +1935,7 @@ FUNCTION {format.addr.inst}
 { address empty$
   { institution empty$
     { "[S.l.]" }
-    { "[S.l.]" * institution *ã€€*}
+    { "[S.l.]" * institution *¡¡*}
     if$
   }
   { institution empty$
@@ -2013,7 +2013,7 @@ FUNCTION {article}
   fin.entry
 }
 
-%FUNCTION {carticle}                                         %wk  æœ¬å‡½æ•°
+%FUNCTION {carticle}                                         %wk  ±¾º¯Êý
 { output.bibitem
   format.cauthors "author" output.check
   author format.key output
@@ -2118,7 +2118,7 @@ FUNCTION {book}
 if$
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%æœªå¤„ç†
+%Î´´¦Àí
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 FUNCTION {booklet}
 {language empty$   
@@ -2298,24 +2298,24 @@ if$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%å›¾ä¹¦bookå’Œ
-%ä¼šè®®å½•inproceedings(ä¼šè®®conferenceä¸Žinproceedingsä¸€æ ·)ï¼Œ         
-%æ–‡çŒ®ç±»åž‹ä»£ç [C]
-%ç¡•å£«å­¦ä½è®ºæ–‡mastersthesisï¼Œ
-%æ–‡çŒ®ç±»åž‹ä»£ç [D]
-%åšå£«å­¦ä½è®ºæ–‡phdthesisï¼Œ
-%æ–‡çŒ®ç±»åž‹ä»£ç [D]
-%æŠ€æœ¯æŠ¥å‘Štechreportçš„ç±»åž‹æ˜¯ä¸€æ ·çš„ï¼Œ
-%æ–‡çŒ®ç±»åž‹ä»£ç [R]
+%Í¼ÊébookºÍ
+%»áÒéÂ¼inproceedings(»áÒéconferenceÓëinproceedingsÒ»Ñù)£¬         
+%ÎÄÏ×ÀàÐÍ´úÂë[C]
+%Ë¶Ê¿Ñ§Î»ÂÛÎÄmastersthesis£¬
+%ÎÄÏ×ÀàÐÍ´úÂë[D]
+%²©Ê¿Ñ§Î»ÂÛÎÄphdthesis£¬
+%ÎÄÏ×ÀàÐÍ´úÂë[D]
+%¼¼Êõ±¨¸ætechreportµÄÀàÐÍÊÇÒ»ÑùµÄ£¬
+%ÎÄÏ×ÀàÐÍ´úÂë[R]
 %
-%å› æ­¤æˆ‘ä»¬ç›´æŽ¥æ‹·è´bookçš„ç›¸å…³å†…å®¹å³å¯ã€‚
-%åŽŸå§‹éƒ¨åˆ†å¯ä»¥å‚è€ƒauthordate1.bstã€‚
+%Òò´ËÎÒÃÇÖ±½Ó¿½±´bookµÄÏà¹ØÄÚÈÝ¼´¿É¡£
+%Ô­Ê¼²¿·Ö¿ÉÒÔ²Î¿¼authordate1.bst¡£
 %
-%åˆ©ç”¨miscä½œä¸ºç”µå­æ–‡çŒ®ï¼»EB/OLï¼½æ‰€ä½¿ç”¨çš„ç±»åž‹
-%å­˜åœ¨çš„é—®é¢˜ï¼šæ— æ³•æ­£å¸¸è°ƒç”¨urlï¼Œåªèƒ½åˆ©ç”¨noteæ¥ç”Ÿæˆã€‚
+%ÀûÓÃmisc×÷Îªµç×ÓÎÄÏ×£ÛEB/OL£ÝËùÊ¹ÓÃµÄÀàÐÍ
+%´æÔÚµÄÎÊÌâ£ºÎÞ·¨Õý³£µ÷ÓÃurl£¬Ö»ÄÜÀûÓÃnoteÀ´Éú³É¡£
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-FUNCTION {inproceedings}                                    %wk æ”¹è‡ªincollectionç±»åž‹
+FUNCTION {inproceedings}                                    %wk ¸Ä×ÔincollectionÀàÐÍ
 {language empty$   
 { output.bibitem
   author empty$
@@ -2346,7 +2346,7 @@ FUNCTION {inproceedings}                                    %wk æ”¹è‡ªincollecti
   fin.entry
 }
 
-%FUNCTION {cinproceedings}                                           %wk æ”¹è‡ªincollectionç±»åž‹
+%FUNCTION {cinproceedings}                                           %wk ¸Ä×ÔincollectionÀàÐÍ
 { output.bibitem
   author empty$
     { format.ceditors "editor" output.check                  %wk    format.editors->format.ceditors
@@ -2382,7 +2382,7 @@ if$
 FUNCTION {conference} { inproceedings }
 %FUNCTION {cconference} { cinproceedings }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-FUNCTION {TECHREPORT}                             %wk   æ”¹è‡ªbookç±»åž‹
+FUNCTION {TECHREPORT}                             %wk   ¸Ä×ÔbookÀàÐÍ
 {language empty$   
 { output.bibitem
   author empty$
@@ -2417,7 +2417,7 @@ FUNCTION {TECHREPORT}                             %wk   æ”¹è‡ªbookç±»åž‹
   fin.entry
 }
 
-%FUNCTION {cTECHREPORT}                                    %wk   æ”¹è‡ªbookç±»åž‹
+%FUNCTION {cTECHREPORT}                                    %wk   ¸Ä×ÔbookÀàÐÍ
 { output.bibitem
   author empty$
     { format.ceditors  "author and editor" output.check       %wk    format.editors->format.ceditors
@@ -2455,7 +2455,7 @@ if$
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-FUNCTION {mastersthesis}                                %wk   æ”¹è‡ªbookç±»åž‹
+FUNCTION {mastersthesis}                                %wk   ¸Ä×ÔbookÀàÐÍ
 {language empty$   
 { output.bibitem
   author empty$
@@ -2491,7 +2491,7 @@ FUNCTION {mastersthesis}                                %wk   æ”¹è‡ªbookç±»åž‹
   fin.entry
 }
 
-%FUNCTION {cmastersthesis}                                %wk   æ”¹è‡ªbookç±»åž‹
+%FUNCTION {cmastersthesis}                                %wk   ¸Ä×ÔbookÀàÐÍ
 { output.bibitem
   author empty$
     { format.ceditors  "author and editor" output.check       %wk    format.editors->format.ceditors
@@ -2528,7 +2528,7 @@ FUNCTION {mastersthesis}                                %wk   æ”¹è‡ªbookç±»åž‹
 if$
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-FUNCTION {phdthesis}                        %wk  æ”¹è‡ªbookç±»åž‹
+FUNCTION {phdthesis}                        %wk  ¸Ä×ÔbookÀàÐÍ
 {language empty$   
 { output.bibitem
   author empty$
@@ -2564,7 +2564,7 @@ FUNCTION {phdthesis}                        %wk  æ”¹è‡ªbookç±»åž‹
   fin.entry
 }
 
-%FUNCTION {cphdthesis}                        %wk  æ”¹è‡ªbookç±»åž‹        
+%FUNCTION {cphdthesis}                        %wk  ¸Ä×ÔbookÀàÐÍ        
 { output.bibitem
   author empty$
     { format.ceditors  "author and editor" output.check       %wk    format.editors->format.ceditors
@@ -2604,7 +2604,7 @@ if$
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-FUNCTION {proceedings}            %æ”¹è‡ªbookç±»åž‹
+FUNCTION {proceedings}            %¸Ä×ÔbookÀàÐÍ
 {language empty$   
 { output.bibitem
   author empty$
@@ -2640,7 +2640,7 @@ FUNCTION {proceedings}            %æ”¹è‡ªbookç±»åž‹
   fin.entry
 }
 
-%FUNCTION {cproceedings}            %æ”¹è‡ªbookç±»åž‹             
+%FUNCTION {cproceedings}            %¸Ä×ÔbookÀàÐÍ             
 { output.bibitem
   author empty$
     { format.ceditors  "author and editor" output.check       %wk    format.editors->format.ceditors
@@ -2680,7 +2680,7 @@ if$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-FUNCTION {manual}             %æ”¹è‡ªbookç±»åž‹
+FUNCTION {manual}             %¸Ä×ÔbookÀàÐÍ
 {language empty$   
 { output.bibitem
   author empty$
@@ -2752,7 +2752,7 @@ if$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-FUNCTION {misc}              %ä½œä¸ºéžå¸¸è§„æ–‡çŒ®çš„æ ¼å¼ï¼Œå¯é æ€§ä½Žï¼Œåº”è¯¥ä»”ç»†æ£€æŸ¥ï¼Œæ”¹è‡ªbookç±»åž‹
+FUNCTION {misc}              %×÷Îª·Ç³£¹æÎÄÏ×µÄ¸ñÊ½£¬¿É¿¿ÐÔµÍ£¬Ó¦¸Ã×ÐÏ¸¼ì²é£¬¸Ä×ÔbookÀàÐÍ
 {language empty$   
 { output.bibitem
   author empty$
@@ -2788,7 +2788,7 @@ FUNCTION {misc}              %ä½œä¸ºéžå¸¸è§„æ–‡çŒ®çš„æ ¼å¼ï¼Œå¯é æ€§ä½Žï¼Œåº
   fin.entry
 }
 
-%FUNCTION {cmisc}              %ä½œä¸ºéžå¸¸è§„æ–‡çŒ®çš„æ ¼å¼ï¼Œå¯é æ€§ä½Žï¼Œåº”è¯¥ä»”ç»†æ£€æŸ¥ï¼Œæ”¹è‡ªbookç±»åž‹        
+%FUNCTION {cmisc}              %×÷Îª·Ç³£¹æÎÄÏ×µÄ¸ñÊ½£¬¿É¿¿ÐÔµÍ£¬Ó¦¸Ã×ÐÏ¸¼ì²é£¬¸Ä×ÔbookÀàÐÍ        
 { output.bibitem
   author empty$
     { format.ceditors  "author and editor" output.check       %wk    format.editors->format.ceditors
@@ -2856,7 +2856,7 @@ FUNCTION {unpublished}
 if$
 }
 
-FUNCTION {default.type} { book }    %wk å› ä¸ºä¸»è¦æ˜¯åŸºäºŽbookç±»åž‹,å› æ­¤å°†ç¼ºçœç±»åž‹ç”±miscæ”¹ä¸ºbook
+FUNCTION {default.type} { book }    %wk ÒòÎªÖ÷ÒªÊÇ»ùÓÚbookÀàÐÍ,Òò´Ë½«È±Ê¡ÀàÐÍÓÉmisc¸ÄÎªbook
 
 MACRO {jan} {"Jan."}                                        %  ODWE, "months", &
                                                             %  Chicago, p. 383.
@@ -2996,7 +2996,7 @@ READ
 %  if$
 %}
 %
-%FUNCTION {calc.label}                                       %wkä¿®æ”¹
+%FUNCTION {calc.label}                                       %wkÐÞ¸Ä
 %  { type$ "book" =
 %    type$ "cbook" = 
 %    type$ "inbook" =
@@ -3242,7 +3242,7 @@ READ
 %  if$
 %  "\begin{thebibliography}{}" write$ newline$
 %  
-%%å¼€å§‹
+%%¿ªÊ¼
 %  "\providecommand{\url}[1]{\texttt{#1}}"
 %  write$ newline$
 %  "\expandafter\ifx\csname urlstyle\endcsname\relax"
@@ -3251,7 +3251,7 @@ READ
 %  write$ newline$
 %  "  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi"
 %  write$ newline$
-%%ç»“æŸ  
+%%½áÊø  
 %  
 %}
 %
@@ -3317,12 +3317,12 @@ FUNCTION {format.lab.cnames}                                      %wk
   s #1 "{vv~}{ll}" format.name$
   s num.names$ duplicate$
   #2 >
-    { pop$ "~ç­‰" * }
+    { pop$ "~µÈ" * }
     { #2 <
         'skip$
         { s #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
             { " {\em et~al.}" * }
-            { "å’Œ" * s #2 "{vv~}{ll}" format.name$ * }           %wk
+            { "ºÍ" * s #2 "{vv~}{ll}" format.name$ * }           %wk
           if$
         }
       if$

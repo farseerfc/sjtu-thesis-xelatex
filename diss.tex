@@ -1,168 +1,241 @@
 %%==================================================
-%% diss.tex for SJTU Master Thesis
-%% based on CASthesis
+%% diss.tex for SJTU PhD Thesis
 %% modified by wei.jianwen@gmail.com
-%% version: 0.3a
-%% Encoding: UTF-8
-%% last update: Dec 5th, 2010
+%% version: 0.2a
+%% last update: Nov 20th, 2009
 %%==================================================
 
-% å­—å·é€‰é¡¹: c5size äº”å·(é»˜è®¤)
-% å­—å·é€‰é¡¹: cs4size å°å››
-% åŒé¢æ‰“å°ï¼ˆæ³¨æ„å­—å·è®¾ç½®ï¼‰
-\documentclass[cs4size, a4paper, cs4size, twoside]{sjtumaster-xetex} 
-% å•é¢æ‰“å°ï¼ˆæ³¨æ„å­—å·è®¾ç½®ï¼‰
-% \documentclass[cs4size, a4paer, cs4size, oneside, openany]{sjtumaster-xetex} 
+% ×ÖºÅÑ¡Ïî: c5size ÎåºÅ(Ä¬ÈÏ)
+% ×ÖºÅÑ¡Ïî: cs4size Ğ¡ËÄ
+\documentclass[a4paper, c5size, twoside]{sjtuphd} 
+% µ¥Ãæ´òÓ¡
+% \documentclass[a4paper, cs4size, oneside, openany]{sjtuphd} 
 
 
-% \usepackage[sectionbib]{chapterbib}%æ¯ç« éƒ½ç”¨å‚è€ƒæ–‡çŒ®
+%% µ±Ç°Ä£°åµÄ°æ±¾
+\newcommand{\version}{v0.2a}
+
+\usepackage{xcolor}
+\usepackage{overpic}
+%\usepackage{pstricks}
+\usepackage{fancyhdr}
+%\usepackage[sectionbib]{chapterbib}%Ã¿ÕÂ¶¼ÓÃ²Î¿¼ÎÄÏ×
+
+% Ó¡Ë¢ÌåÊı×Ö
+% \usepackage{bbm}
+
+%\usepackage{feynmf}
+\usepackage{ifthen}%Ñ¡Ôñ±àÒë
 
 \newboolean{DOIT}
-\setboolean{DOIT}{false}%ç¼–è¯‘æŸäº›åªæƒ³è‡ªå·±çœ‹çš„å†…å®¹ï¼Œç¼–è¯‘trueï¼Œå¦åˆ™false
+\setboolean{DOIT}{false}%±àÒëÄ³Ğ©Ö»Ïë×Ô¼º¿´µÄÄÚÈİ£¬±àÒëtrue£¬·ñÔòfalse
 
-%% è¡Œè·ç¼©æ”¾å› å­(xå€å­—å·)
+%È¡ÏûÁ´½ÓµÄÑÕÉ«
+%\hypersetup{colorlinks=false}
+
+% ÊÇ·ñÊ¹ÓÃYapµÄ¿ª¹Ø
+\def\useyap{true}%{false}%
+
+\addtolength{\voffset}{-0.5cm}
+
 \renewcommand{\baselinestretch}{1.3}
 
-% è®¾ç½®å›¾å½¢æ–‡ä»¶çš„æœç´¢è·¯å¾„
+%Ê¹ÓÃ·Çeps¸ñÊ½Í¼Æ¬£¬Ê×ÏÈ¶ÔÍ¼Æ¬ÓÃebbÃüÁîÉú³É±ß½çÎÄ¼ş.bb£¬Ê¹ÓÃ
+%Í¼Æ¬Ê±.bbÎÄ¼şÒ²Òª·ÅÔÚÍ¼Æ¬ËùÔÚµÄÄ¿Â¼
+\DeclareGraphicsRule{.jpg}{eps}{.bb}{}
+\DeclareGraphicsRule{.png}{eps}{.bb}{}
+%ÖĞÎÄÆÆÕÛºÅ
+\newcommand{\cndash}{\rule{0.0em}{0pt}\rule[0.35em]{1.4em}{0.05em}\rule{0.2em}{0pt}}
+
+% ÉèÖÃÍ¼ĞÎÎÄ¼şµÄËÑË÷Â·¾¶
 \graphicspath{{figure/}{figures/}{logo/}{logos/}{graph/}{graphs}}
 
-%%========================================
-%% åœ¨sjtumaster-xetex.clsä¸­å®šä¹‰çš„æœ‰ç”¨å‘½ä»¤
-%%========================================
-% \cndash ä¸­æ–‡ç ´æŠ˜å·
-% æ•°å­¦å¸¸é‡
-% \me å¯¹æ•°å¸¸æ•°e
-% \mi è™šæ•°å•ä½i
-% \mj è™šæ•°å•ä½j
-% \dif ç›´ç«‹çš„å¾®åˆ†ç®—ç¬¦dä¸ºç›´ç«‹ä½“ã€‚
-% å¯ä¼¸é•¿çš„æ•°å­¦ç®­å¤´ã€ç­‰å·
-% \myRightarrow{}{}
-% \myLeftarrow{}{}
-% \myBioarrow{}{}
-% \myLongEqual{}{}
-% å‚è€ƒæ–‡çŒ®
-% \upcite{} ä¸Šæ ‡å¼•ç”¨
-%%========================================
+%% Ò»Ğ©ÓĞÈ¤µÄ·ûºÅÍ¼°¸
+\usepackage{marvosym}
+
+%% ¸´ÔÓ±í¸ñ
+\usepackage{threeparttable}
+\usepackage{dcolumn}
+\usepackage{multirow}
+\usepackage{booktabs}
+\newcolumntype{d}[1]{D{.}{.}{#1}}% or D{.}{,}{#1} or D{.}{\cdot}{#1}
+
+%% ²¢ÁĞ×ÓÍ¼
+\usepackage{subfigure}
+
+%% ¶¨Òå¼¸¸ö³£ÓÃµÄÊıÑ§³£Á¿·ûºÅ
+\newcommand{\me}{\mathrm{e}} %¶¨Òå ¶ÔÊı³£Êıe£¬ĞéÊı·ûºÅi,jÒÔ¼°Î¢·ÖËã×ÓdÎªÖ±Á¢Ìå¡£
+\newcommand{\mi}{\mathrm{i}}
+\newcommand{\mj}{\mathrm{j}}
+\newcommand{\dif}{\mathrm{d}}
+
+% Ö±Á¢Ï£À°×ÖÄ¸×ÖÌå
+\usepackage{upgreek}
+
+
+% listings Ô´´úÂëÏÔÊ¾ºê°ü
+\usepackage{listings}
+\lstset{tabsize=4, %
+  frame=shadowbox, %°Ñ´úÂëÓÃ´øÓĞÒõÓ°µÄ¿òÈ¦ÆğÀ´
+  commentstyle=\color{red!50!green!50!blue!50},%Ç³»ÒÉ«µÄ×¢ÊÍ
+  rulesepcolor=\color{red!20!green!20!blue!20},%´úÂë¿é±ß¿òÎªµ­ÇàÉ«
+  keywordstyle=\color{blue!90}\bfseries, %´úÂë¹Ø¼ü×ÖµÄÑÕÉ«ÎªÀ¶É«£¬´ÖÌå
+  showstringspaces=false,%²»ÏÔÊ¾´úÂë×Ö·û´®ÖĞ¼äµÄ¿Õ¸ñ±ê¼Ç
+  stringstyle=\ttfamily, % ´úÂë×Ö·û´®µÄÌØÊâ¸ñÊ½
+  keepspaces=true, %
+  breakindent=22pt, %
+  numbers=left,%×ó²àÏÔÊ¾ĞĞºÅ
+  stepnumber=1,%
+  numberstyle=\tiny, %ĞĞºÅ×ÖÌåÓÃĞ¡ºÅ
+  basicstyle=\footnotesize, %
+  showspaces=false, %
+  flexiblecolumns=true, %
+  breaklines=true, %¶Ô¹ı³¤µÄ´úÂë×Ô¶¯»»ĞĞ
+  breakautoindent=true,%
+  breakindent=4em, %
+  escapebegin=\begin{CJK*}{GBK}{kai},escapeend=\end{CJK*},
+  aboveskip=1em, %´úÂë¿é±ß¿ò
+  %% added by http://bbs.ctex.org/viewthread.php?tid=53451
+  fontadjust,
+  captionpos=t,
+  framextopmargin=2pt,framexbottommargin=2pt,abovecaptionskip=-3pt,belowcaptionskip=3pt,
+  xleftmargin=4em,xrightmargin=4em, % Éè¶¨listing×óÓÒµÄ¿Õ°×
+  texcl=true,
+  % Éè¶¨ÖĞÎÄ³åÍ»£¬¶ÏĞĞ£¬ÁĞÄ£Ê½£¬ÊıÑ§»·¾³ÊäÈë£¬listingÊı×ÖµÄÑùÊ½
+  extendedchars=false,columns=flexible,mathescape=true
+  % numbersep=-1em
+}
 
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%% å°é¢
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ·âÃæ²¿·Ö
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% ä¸­æ–‡å°é¢å†…å®¹(å…³æ³¨å†…å®¹è€Œä¸æ˜¯å½¢å¼)
-\title{ä¸Šæµ·äº¤é€šå¤§å­¦ç¡•å£«å­¦ä½è®ºæ–‡~\XeTeX/\LaTeX~æ¨¡æ¿~\version}
-\author{æ\quad{}å››}
-\advisor{å¼ ä¸‰æ•™æˆ}
-\degree{ç¡•å£«}
-\defenddate{2010å¹´1æœˆ16æ—¥}
-\school{ä¸Šæµ·äº¤é€šå¤§å­¦}
-\institute{ç‰©ç†ç³»}
-\studentnumber{0010900990}
-\major{ä¸“ä¸šåç§°}
+  % ÖĞÎÄ·âÃæÄÚÈİ
+  \title{ÉÏº£½»Í¨´óÑ§²©Ê¿Ñ§Î»ÂÛÎÄ~\LaTeX~Ä£°å~\version}
+  \author{ÀîËÄ}
+  \advisor{ÕÅÈı½ÌÊÚ}
+  \degree{²©Ê¿}
+  \defenddate{2~0~0~9~Äê~10~ÔÂ~16~ÈÕ}
+  \school{ÉÏº£½»Í¨´óÑ§}
+  \institute{ÎïÀíÏµ}
+  \studentnumber{0010900990}
+  \major{×¨ÒµÃû³Æ}
 
-% è‹±æ–‡å°é¢å†…å®¹(å…³æ³¨å†…å®¹è€Œä¸æ˜¯è¡¨ç°å½¢å¼)
-\englishtitle{\XeTeX/\LaTeX\, Template for SJTU Mater Degree Thesis \version}
-\englishauthor{\textsc{Si Li}}
-\englishadvisor{Prof. \textsc{San Zhang}}
-\englishschool{Shanghai Jiao Tong University}
-\englishinstitute{\textsc{Depart of XXX, School of XXX} \\
-  \textsc{Shanghai Jiao Tong University} \\
-  \textsc{Shanghai, P.R.China}}
-\englishdegree{Master}
-\englishmajor{Physics}
-\englishdate{Jan. 16th, 2010}
+  % Ó¢ÎÄ·âÃæÄÚÈİ
+  \englishtitle{\LaTeX\, Template for SJTU Ph.D Thesis \version}
+  \englishauthor{\textsc{Si Li}}
+  \englishadvisor{Prof. \textsc{San Zhang}}
+  \englishschool{Shanghai Jiao Tong University}
+  \englishinstitute{\textsc{Depart of XXX, School of XXX} \\
+    \textsc{Shanghai Jiao Tong University}\\
+    \textsc{Shanghai, P.R.China}}
+  \englishdegree{Doctor}
+  \englishmajor{Physics}
+  \englishdate{Oct. 16th, 2009}
 
-% å°é¢
-\maketitle
+  % ·âÃæ
+  \maketitle
 
-% è‹±æ–‡å°é¢
-\makeenglishtitle
+  % Ó¢ÎÄ·âÃæ
+  \makeenglishtitle
 
-% è®ºæ–‡åŸåˆ›æ€§å£°æ˜å’Œä½¿ç”¨æˆæƒ
-\makeDeclareOriginal
-\makeDeclareAuthorization
+  %ÂÛÎÄÔ­´´ĞÔÉùÃ÷ºÍÊ¹ÓÃÊÚÈ¨
+  \makeDeclareOriginal
+  \makeDeclareAuthorization
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%% å‰è¨€
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ç°ÑÔ²¿·Ö
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
 
-% æ‘˜è¦
-\include{body/abstract}
+  % ÕªÒª
+ \include{body/abstract}
 
-% ç›®å½•
-\tableofcontents
-% è¡¨æ ¼ç´¢å¼•
-\listoftables
-% æ’å›¾ç´¢å¼•
-\listoffigures
+  % Ä¿Â¼
+  \tableofcontents
+  % ±í¸ñË÷Òı
+  \listoftables
+  % ²åÍ¼Ë÷Òı
+ \listoffigures
 
-\addcontentsline{toc}{chapter}{\listfigurename} %å°†è¡¨æ ¼ç´¢å¼•åŠ å…¥å…¨æ–‡ç›®å½•
-\addcontentsline{toc}{chapter}{\listtablename}  %å°†å›¾ç´¢å¼•åŠ å…¥å…¨æ–‡ç›®å½•
+\addcontentsline{toc}{chapter}{\listfigurename} %¼ÓÈë²åÍ¼Ë÷Òı
+\addcontentsline{toc}{chapter}{\listtablename}  %¼ÓÈë±í¸ñË÷Òı
 
-% ä¸»è¦ç¬¦å·ã€ç¼©ç•¥è¯å¯¹ç…§è¡¨
+
+%Ö÷Òª·ûºÅ¶ÔÕÕ±í
 \include{body/symbol}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%% æ­£æ–‡
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\mainmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ÕıÎÄ²¿·Ö
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \mainmatter
 
-\fancypagestyle{plain}{% è®¾ç½®å¼€ç« é¡µé¡µçœ‰é¡µè„šé£æ ¼
+ \fancypagestyle{plain}{% ÉèÖÃ¿ªÕÂÒ³Ò³Ã¼Ò³½Å·ç¸ñ
   \fancyhf{}%
-  \fancyhead[LO,RE]{\small {\it ä¸Šæµ·äº¤é€šå¤§å­¦ç¡•å£«å­¦ä½è®ºæ–‡}}  % å¥‡æ•°é¡µå·¦é¡µçœ‰
-  \fancyhead[RO]{\small {\it \leftmark}}                   % å¥‡æ•°é¡µå·¦é¡µçœ‰
-  \fancyhead[LE]{\small {\it \CAST@value@titlemark}} 	 % å¶æ•°é¡µå·¦é¡µçœ‰
-  \fancyhead[RE]{\small {\it ä¸Šæµ·äº¤é€šå¤§å­¦ç¡•å£«å­¦ä½è®ºæ–‡}}       % å¶æ•°é¡µå³é¡µçœ‰
-  \fancyfoot[C]{\small ~---~{\bf\thepage}~---~} %é¡µè„šæ ¼å¼
+  \fancyhead[LE]{\small {\it ÉÏº£½»Í¨´óÑ§Ë¶Ê¿Ñ§Î»ÂÛÎÄ}}  % Å¼ÊıÒ³×óÒ³Ã¼
+  \fancyhead[RE]{\small \CAST@value@titlemark}       % Å¼ÊıÒ³ÓÒÒ³Ã¼
+  \fancyhead[LO]{\small {\it ÉÏº£½»Í¨´óÑ§Ë¶Ê¿Ñ§Î»ÂÛÎÄ}}  % ÆæÊıÒ³×óÒ³Ã¼
+  \fancyhead[RO]{\small \leftmark}                   % ÆæÊıÒ³×óÒ³Ã¼
+  \fancyfoot[C]{\small ~---~{\bf\thepage}~---~} %%Ê×Ò³Ò³½Å¸ñÊ½
 }
 
 
-%% å„ç« æ­£æ–‡å†…å®¹
-\include{body/chapter01}
-\include{body/chapter02}
-\include{body/chapter03}
-\include{body/chapter04}
-\include{body/conclusion} %% å…¨æ–‡æ€»ç»“
+%% ÕıÎÄ¸÷ÕÂÄÚÈİ
+  \include{body/chapter01}
+  \include{body/chapter02}
+  % \include{body/chapter03}
+  \include{body/conclusion} % È«ÎÄ×Ü½á
+  
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%% é™„å½•(ç« èŠ‚ç¼–å·é‡æ–°è®¡ç®—ï¼Œä½¿ç”¨å­—æ¯è¿›è¡Œç¼–å·)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\appendix
-
-% é™„å½•ä¸­ç¼–å·å½¢å¼æ˜¯"A-1"çš„æ ·å­
+%%
+  %%  % ¸½Â¼
+  % ¸½Â¼ÖĞ±àºÅĞÎÊ½Ò²ÊÇ"A-1"µÄÑù×Ó
 \renewcommand\theequation{\Alph{chapter}--\arabic{equation}}
 \renewcommand\thefigure{\Alph{chapter}--\arabic{figure}}
 \renewcommand\thetable{\Alph{chapter}--\arabic{table}}
+ \appendix
+%%
+ \include{body/app1} % ¸üĞÂ¼ÇÂ¼
+ \include{body/app2} % Âó¿ËË¹Î¤·½³Ì
+%\include{body/app3}
 
-\include{body/app1} % æ›´æ–°è®°å½•
-\include{body/app2} % éº¦å…‹æ–¯éŸ¦æ–¹ç¨‹
-% \include{body/app3}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%% æ–‡å(æ— ç« èŠ‚ç¼–å·)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ¸½¼ş²¿·Ö
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \backmatter
 
-% å‚è€ƒæ–‡çŒ®
-% ä½¿ç”¨ BibTeX
-% åŒ…å«å‚è€ƒæ–‡çŒ®æ–‡ä»¶.bib
+  % ²Î¿¼ÎÄÏ×
+
+  % Ê¹ÓÃ BibTeX
+  %½ÏºÃµÄstyle½¨ÒéÓÃsjtu2.bst½ÏºÃ
+
+  %ÈôÒªÃ¿ÕÂ¶¼ÓĞ²Î¿¼ÎÄÏ×£¬Ê¹ÓÃ\usepackage[sectionbib]{chapterbib}
+  %Ã¿¸öincludeµÄÎÄ¼ş¶¼ÒªĞ´ÉÏ \bibliographystyle and \bibliography
+  %±àÒë·½·¨latex [Ö÷ÎÄ¼ş].tex    bibtex  [Ã¿Ò»ÕÂ].aux    latex [Ö÷ÎÄ¼ş].tex    dvipdfmx  [Ö÷ÎÄ¼ş].tex
+  %¾ßÌå¼ûcite/chapterbib.styÎÄ¼şÖĞµÄËµÃ÷
+
 \bibliography{reference/chap1,reference/chap2}
 
-%% ä¸ªäººç®€å†(ç¡•å£«å­¦ä½è®ºæ–‡æ²¡æœ‰ä¸ªäººç®€å†è¦æ±‚)
-% \include{body/resume}
 
-% è‡´è°¢
-\include{body/thanks}
+  %  \nocite{*}
+  % ²»Ê¹ÓÃ BibTeX
+  % \include{chapter/bib}
 
-% å‘è¡¨æ–‡ç« ç›®å½•
-\include{body/pub}
 
-% å‚ä¸é¡¹ç›®åˆ—è¡¨
-\include{body/projects}
+
+  % ¸öÈË¼òÀú
+  \include{body/resume}
+
+  % ÖÂĞ»
+  \include{body/thanks}
+
+  % ·¢±íÎÄÕÂÄ¿Â¼
+ \include{body/pub}
+
 
 \end{document}
