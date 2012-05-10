@@ -332,13 +332,13 @@ enumitem相互冲突。
 \end{lstlisting}
 
 产生如下的结果：
-\begin{quate}
+\begin{quote}
 \begin{enum}
 \item 项目1
 \item 项目2
 \item 项目3
 \end{enum}
-\end{quate}
+\end{quote}
 
 还可以采用enumerate环境对项目编号的格式做细节调整，比如如下的项目列表：
 \begin{lstlisting}[language={TeX}]
@@ -350,8 +350,6 @@ enumitem相互冲突。
       \item one of two one of two
       one of two\label{LB}
       \item two of two
-  \end{enumerate}
-  \item two of two
   \end{enumerate}
 \end{enumerate}
 
@@ -371,8 +369,6 @@ enumitem相互冲突。
       \item one of two one of two
       one of two\label{LB}
       \item two of two
-  \end{enumerate}
-  \item two of two
   \end{enumerate}
 \end{enumerate}
 
@@ -433,17 +429,17 @@ enumitem相互冲突。
 Git改进这个模板，使之更符合学校的要求。
 
 Github上寄宿的模板地址是：
-\begin{quate}
+\begin{quote}
 https://github.com/farseerfc/sjtu-thesis-xelatex
-\end{quate}
+\end{quote}
 
 要获取master硕士模板，只需要安装好git工具之后，执行代码：
-\begin{lstlisting}[language="bash"]
+\begin{lstlisting}
 git clone git://github.com/farseerfc/sjtu-thesis-xelatex
 \end{lstlisting}
 
 如果想要获取bachelor本科（学士）模板，在上一句的基础上：
-\begin{lstlisting}[language="bash"]
+\begin{lstlisting}
 git branch bachelor
 git checkout bachelor
 git pull origin bachelor

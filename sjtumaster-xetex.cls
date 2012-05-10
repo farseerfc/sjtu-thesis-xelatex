@@ -17,8 +17,7 @@
   [2009/12/25 v0.2a sjtumaster-xetex document class]
 
 % Add by farseerfc@gmail.com
-\newif\ifCLASSOPTIONbachelor       \CLASSOPTIONbachelor
-
+\newif\ifCLASSOPTIONbachelor       \CLASSOPTIONbachelortrue
 \DeclareOption{bachelor}{\CLASSOPTIONbachelortrue}
 
 \newif\ifCAST@typeinfo \CAST@typeinfotrue
