@@ -85,45 +85,33 @@ xelatex test.tex
 \label{sec:layout}
 
 \begin{lstlisting}[basicstyle=\small\ttfamily,caption={模板文件布局},label=layout,float,numbers=none]
-.
-|-- body
-|   |-- abstract.tex
-|   |-- app1.tex
-|   |-- app2.tex
-|   |-- bigabstract.tex
-|   |-- chapter01.tex
-|   |-- chapter02.tex
-|   |-- chapter03.tex
-|   |-- chapter04.tex
-|   |-- conclusion.tex
-|   |-- projects.tex
-|   |-- pub.tex
-|   |-- resume.tex
-|   |-- symbol.tex
-|   `-- thanks.tex
-|-- diss.tex
-|-- figures
-|   |-- chap2
-|   |   |-- testeps.eps
-|   |   |-- testjpg.jpg
-|   |   |-- testpdf.pdf
-|   |   `-- testpng.png
-|   `-- logo.png
-|-- from.gkb.to.utf8.txt
-|-- GBT7714-2005NLang.bst
-|-- Makefile
-|-- mythesis.pdf
-|-- README.pdf
-|-- reference
-|   |-- chap1.bib
-|   `-- chap2.bib
-|-- run.bat
-|-- run.sh
-|-- sjtumaster-xetex.cfg
-|-- sjtumaster-xetex.cls
-|-- test.pdf
-|-- test.tex
-`-- TeX.Gyre.Termes.Fonts.zip
+  ├─ diss.tex
+  ├── README.pdf
+  ├── sjtumaster-xetex.cfg
+  ├── sjtumaster-xetex.cls
+  ├── body
+  │   ├── abstract.tex
+  │   ├── app1.tex
+  │   ├── app2.tex
+  │   ├── chapter01.tex
+  │   ├── chapter02.tex
+  │   ├── conclusion.tex
+  │   ├── projects.tex
+  │   ├── pub.tex
+  │   ├── resume.tex
+  │   ├── symbol.tex
+  │   └── thanks.tex
+  ├── figures
+  │   └── chap2
+  ├── from.gkb.to.utf8.txt
+  ├── GBT7714-2005NLang.bst
+  ├── Makefile
+  ├── reference
+  │   ├── chap1.bib
+  │   └── chap2.bib
+  ├── run.bat
+  ├── run.sh
+  └── test.tex
 \end{lstlisting}
 
 你拿到手的模板文件大致会包含代码\ref{layout}所列的文件，乍看起来还是挺令人头大的。
@@ -260,138 +248,6 @@ reference~文件夹放置的是各章``可能''会被引用的参考文献文件
 
 教务处要求参考文献必须符合~GBT7714~风格，学校明确提出使用这个标准而不是自己拍脑袋想出别的做法，应该算是谢天谢地了。使用这个模板，结合BibTeX，可以很方便地生成符合GB标准的参考文献列表。
 
-\section{本科论文模板使用说明}
-\label{sec:bachelor}
-
-本科论文模板由饮水思源Tex\_Latex版fcfarseer
-\footnote{我的邮箱： \href{mailto:farseerfc@gmail.com}{farseerfc@gmail.com} }
-在硕士论文模板的基础上修改，本节说明同样是fcfarseer撰写的。
-
-关于本科学位论文模板的要求，我参考以下文档：
-\href{http://jwc.sjtu.edu.cn/dispTable.asp?tab=softdown&id=178}{《本科生毕业论文撰写规范(新版)》}。
-要求中没有明确写明的格式，参考以下的本科学士论文Word模板：
-\href{http://www.jwc.sjtu.edu.cn/dispTable.asp?tab=softdown&id=179}{《本科生毕业论文模板(新版) 》}。
-
-使用本科模板时，只要在文档类添加选项bachelor，就会应用本科模板格式。由于本科模板通常采用``单面打印''，所以文档类的语句这样写：
-
-\begin{quote}
-  {\scriptsize\verb+\documentclass[c5size, a4paper, c5size, oneside, openany,bachelor]{sjtumaster-xetex}+}
-\end{quote}
-
-硕士模板与本科模板的差异接下来详细介绍。
-
-\subsection{页面布局}
-\label{subsec:bachelor_pagelayout}
-调整了纵向页面高度，从
-\begin{quote}
-  {
-\begin{lstlisting}[language={TeX}]
-  \textheight 21 true cm
-  \addtolength{\voffset}{-0.5cm}
-\end{lstlisting}
-  }
-\end{quote}
-调整到
-\begin{quote}
-  {
-\begin{lstlisting}[language={TeX}]
-  \textheight 24 true cm
-  \addtolength{\voffset}{-2.5cm}
-\end{lstlisting}
-  }
-\end{quote}
-使之基本符合本科学士论文Word模板的页面高度。
-
-\subsection{页眉页脚}
-\label{subsec:bachelor_fancyfnt}
-根据本科学士论文Word模板，重新定义了页眉页脚的样式。页眉左侧为上海交通大学Logo，
-图片文件放置于figure/logo.png中，页眉右侧为学士论文题目。页脚为中文页号，格式
-是“第 ? 页 共 ?? 页”。
-
-\subsection{大摘要}
-\label{subsec:bigabstract}
-根据本科论文模板新版要求，增加大摘要章节于正文的最后。大摘要独立计算页号和总页号。
-大摘要的文件位于body/bigabstract.tex中，采用bigabstract环境。大摘要不需要英文摘要的关键字。
-
-大摘要环境独立于bachelor文档类选项，在硕士论文中如果不需要的话，可以注释掉include语句。
-
-\subsection{项目编号}
-\label{subsec:bachelor_enumerate}
-根据本科论文要求，项目编号全部采用``（1）、（2）''的形式。因此我
-引入enumerate包，在这个包的enumerate环境基础上重新定义新的enum环境，项目编号采用
-格式要求中的``（1）、（2）''这样的形式。保留旧的enumerate环境。可惜包enumrate和包
-enumitem相互冲突。
-
-比如如下的项目列表代码：
-\begin{lstlisting}[language={TeX}]
-\begin{enum}
-\item 项目1
-\item 项目2
-\item 项目3
-\end{enum}
-\end{lstlisting}
-
-产生如下的结果：
-\begin{quate}
-\begin{enum}
-\item 项目1
-\item 项目2
-\item 项目3
-\end{enum}
-\end{quate}
-
-还可以采用enumerate环境对项目编号的格式做细节调整，比如如下的项目列表：
-\begin{lstlisting}[language={TeX}]
-\begin{enumerate}[EX i.]
-  \item one one one one one one one
-        one one one one\label{LA}
-  \item two
-    \begin{enumerate}[{example} a)]
-      \item one of two one of two
-      one of two\label{LB}
-      \item two of two
-  \end{enumerate}
-  \item two of two
-  \end{enumerate}
-\end{enumerate}
-
-\begin{enumerate}[{A}-1]
-  \item one\label{LC}
-  \item two
-\end{enumerate}
-\end{lstlisting}
-
-产生如下的结果：
-
-\begin{enumerate}[EX i.]
-  \item one one one one one one one
-        one one one one\label{LA}
-  \item two
-    \begin{enumerate}[{example} a)]
-      \item one of two one of two
-      one of two\label{LB}
-      \item two of two
-  \end{enumerate}
-  \item two of two
-  \end{enumerate}
-\end{enumerate}
-
-\begin{enumerate}[{A}-1]
-  \item one\label{LC}
-  \item two
-\end{enumerate}
-
-具体定制细节参考\href{http://www.tug.org/texlive/devsrc/Master/texmf-dist/doc/latex/tools/enumerate.pdf}{The \bf{enumerate} package文档}。
-
-\subsection{其它细节调整}
-\label{subsec:bachelor_other}
-\begin{enum}
-\item 调整图、表、代码的标题字体，从小字号楷体调整为加粗宋体。
-\item 调整摘要字体格式
-\item frontmatter的内容不显示页号
-\item frontmatter的内容不出现在目录中
-\end{enum}
-
 \section{模板更新说明}
 \label{sec:update}
 
@@ -425,28 +281,3 @@ enumitem相互冲突。
 
 如果你是~\TeX/\LaTeX~方面的专家，也可以直接给我发\href{mailto:wei.jianwen@gmail.com}{邮件}，一起讨论改善模板的方法。
 邮件的主题请加上``latex''字样。此外，模板中的其他纰缪，也欢迎直接来信抱怨。
-
-\section{Git版本管理}
-\label{sec:git}
-
-这个模板的代码除了可以在饮水思源TeX\_LaTeX版获得，还可以从Github获得，鼓励采用
-Git改进这个模板，使之更符合学校的要求。
-
-Github上寄宿的模板地址是：
-\begin{quate}
-https://github.com/farseerfc/sjtu-thesis-xelatex
-\end{quate}
-
-要获取master硕士模板，只需要安装好git工具之后，执行代码：
-\begin{lstlisting}[language="bash"]
-git clone git://github.com/farseerfc/sjtu-thesis-xelatex
-\end{lstlisting}
-
-如果想要获取bachelor本科（学士）模板，在上一句的基础上：
-\begin{lstlisting}[language="bash"]
-git branch bachelor
-git checkout bachelor
-git pull origin bachelor
-\end{lstlisting}
-
-就可以了。详细的Git使用请参考\href{http://www.linuxsir.org/main/doc/git/gittutorcn.htm}{Git 中文教程}

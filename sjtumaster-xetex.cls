@@ -15,12 +15,6 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{sjtumaster-xetex}
   [2009/12/25 v0.2a sjtumaster-xetex document class]
-
-% Add by farseerfc@gmail.com
-\newif\ifCLASSOPTIONbachelor       \CLASSOPTIONbachelor
-
-\DeclareOption{bachelor}{\CLASSOPTIONbachelortrue}
-
 \newif\ifCAST@typeinfo \CAST@typeinfotrue
 \DeclareOption{notypeinfo}{\CAST@typeinfofalse}
 \newif\ifCAST@dvips \CAST@dvipsfalse
@@ -44,20 +38,12 @@
 \else
   \evensidemargin 1.5 true cm
 \fi
-
-\ifCLASSOPTIONbachelor 
-  \textheight 24 true cm
-  \addtolength{\voffset}{-2.5cm}
-\else
-  \textheight 21 true cm
-  \addtolength{\voffset}{-0.5cm}
-\fi
-
+\textheight 21 true cm
 \textwidth 14.5 true cm
 \headheight 15pt
 \parskip 0.5ex plus 0.25ex minus 0.25ex
 %% 上边距(？？)
-
+\addtolength{\voffset}{-0.5cm}
 
 
 %% Command -- Clear Double Page
@@ -130,14 +116,9 @@
 % ccaption -- bicaption
 \RequirePackage{ccaption}
 \captiondelim{\ }
+\captionnamefont{\kaishu\small}
+\captiontitlefont{\kaishu\small}
 
-\ifCLASSOPTIONbachelor
-  \captionnamefont{\songti\bf}
-  \captiontitlefont{\songti\bf}
-\else
-  \captionnamefont{\kaishu\small}
-  \captiontitlefont{\kaishu\small}
-\fi
 
 %% sort and compress citations
 \RequirePackage[sort&compress,numbers]{natbib}
@@ -224,15 +205,9 @@
 \fi
 \fi
 
-%% enumerate 项目符号，定义新环境enum，项目符号是本科论文要求的（1）、（2）的形式。与包enumitem冲突。
-% Ref: http://www.tug.org/texlive/devsrc/Master/texmf-dist/doc/latex/tools/enumerate.pdf
-% added by farseerfc@gmail.com
-\usepackage{enumerate}
-\newenvironment{enum}{\begin{enumerate}[（1）]}{\end{enumerate}}
-
 %% enumerate 列表环境间距调节
 % Ref: http://bbs.ctex.org/viewthread.php?tid=52331&page=1
-% \usepackage{enumitem}
+\usepackage{enumitem}
 % \setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
 % \setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
 % \setdescription{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}  
@@ -404,35 +379,7 @@
   \fi
 }
 
-\ifCLASSOPTIONbachelor
 
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{\small {\it \includegraphics[width=0.22\textwidth]{logo}}}  % 奇数页左页眉
-\fancyhead[R]{\small {\it \CAST@value@titlemark}}                   % 奇数页左页眉
-\fancyfoot[C]{\small ~第~{\bf\thepage}~页~共~{\pageref{lastpage}}~页~}      % 页脚
-
-
-\fancypagestyle{plain}{% 设置开章页页眉页脚风格(只有页码作为页脚)
-  \fancyhf{}%
-  \fancyhead[L]{\small {\it \includegraphics[width=0.22\textwidth]{logo}}}  % 奇数页左页眉
-  \fancyhead[R]{\small {\it \CAST@value@titlemark}}                   % 奇数页左页眉
-  \fancyfoot[C]{\small ~第~{\bf\thepage}~页~共~{\pageref{lastpage}}~页~}      % 页脚
-  %\renewcommand{\headrulewidth}{0pt}%
-  %\renewcommand{\footrulewidth}{0pt}%
-}
-
-\fancypagestyle{frontmatter}{% 设置开章页页眉页脚风格(只有页码作为页脚)
-  \fancyhf{}%
-  \fancyhead[L]{\small {\it \includegraphics[width=0.22\textwidth]{logo}}}  % 奇数页左页眉
-  \fancyhead[R]{\small {\it \CAST@value@titlemark}}                   % 奇数页左页眉
-  \fancyfoot[C]{\small ~}      % 页脚
-  %\renewcommand{\headrulewidth}{0pt}%
-  %\renewcommand{\footrulewidth}{0pt}%
-}
-
-
-\else
 %_ 页眉页脚
 \pagestyle{fancy}
 \fancyhf{}
@@ -449,7 +396,6 @@
   \renewcommand{\headrulewidth}{0pt}%
   \renewcommand{\footrulewidth}{0pt}%
 }
-\fi
 
 % 每一章的首页也使用fancyhdr的页眉页脚设置
 % \makeatletter
@@ -459,36 +405,18 @@
  
 
  %_ 中文摘要
-\ifCLASSOPTIONbachelor
-  \newenvironment{abstract}
-  {
-  \chapter*{\heiti\zihao{3}\CAST@value@title\vskip 20pt\heiti\zihao{4}\CAST@label@abstract}
-  \thispagestyle{frontmatter}
-  }
-  {}
-\else
-  \newenvironment{abstract}
-  {\chapter[\heiti 摘要]{\CAST@value@title\vskip 20pt\CAST@label@abstract}}
-  {}
-\fi
+ \newenvironment{abstract}
+ {\chapter[\heiti 摘要]{\CAST@value@title\vskip 20pt\CAST@label@abstract}}
+ {}
+
  %_ 中文关键词
  \newcommand\keywords[1]{%
    \vspace{2ex}\noindent{\bf\large \CAST@label@keywords} #1}
 
  %_ 英文摘要
-\ifCLASSOPTIONbachelor
-  \newenvironment{englishabstract}
-  {
-  \chapter*{\normalfont\zihao{3}\bf\textsc\CAST@value@englishtitle\vskip 20pt \normalfont\zihao{4}\bf\textsc\CAST@label@englishabstract}
-  \thispagestyle{frontmatter}
-  }
-  {}
-
-\else
-  \newenvironment{englishabstract}
-  {\chapter[\heiti ABSTRACT]{\CAST@value@englishtitle\vskip 20pt\bfseries \CAST@label@englishabstract}}
-  {}
-\fi
+ \newenvironment{englishabstract}
+ {\chapter[\heiti ABSTRACT]{\CAST@value@englishtitle\vskip 20pt\bfseries \CAST@label@englishabstract}}
+ {}
 
  % _英文摘要
  \newcommand\englishkeywords[1]{%
@@ -502,12 +430,7 @@
   \else
   \@restonecolfalse
   \fi
-  \ifCLASSOPTIONbachelor
-    \chapter*{\contentsname}
-    \thispagestyle{frontmatter}
-  \else
-    \chapter{\contentsname}%目录里显示“目录”，否则\chapter*
-  \fi
+  \chapter{\contentsname}%目录里显示“目录”，否则\chapter*
   \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}%
   \@starttoc{toc}%
   \if@restonecol\twocolumn\fi
@@ -539,12 +462,7 @@
 
     
 \newenvironment{publications}[1]
-     {
-      \ifCLASSOPTIONbachelor
-        \chapter*{\CAST@label@publications}%
-      \else
-        \chapter{\CAST@label@publications}%
-      \fi
+     {\chapter{\CAST@label@publications}%
       \@mkboth{\MakeUppercase\CAST@label@publications}
               {\MakeUppercase\CAST@label@publications}%
       \list{\@biblabel{\@arabic\c@enumiv}}%
@@ -565,12 +483,7 @@
       \endlist}
 
 \newenvironment{projects}[1]
-     {
-      \ifCLASSOPTIONbachelor
-        \chapter*{\CAST@label@projects}%
-      \else
-        \chapter{\CAST@label@projects}%
-      \fi
+     {\chapter{\CAST@label@projects}%
       \@mkboth{\MakeUppercase\CAST@label@projects}
               {\MakeUppercase\CAST@label@projects}%
       \list{\@biblabel{\@arabic\c@enumiv}}%
@@ -590,14 +503,8 @@
        {\@latex@warning{Empty `projects' environment}}%
       \endlist}
     
-\newenvironment{resume}
-  {
-  \ifCLASSOPTIONbachelor
-    \chapter*{\CAST@label@resume}
-  \else
-    \chapter{\CAST@label@resume}
-  \fi
-  }
+    \newenvironment{resume}
+  {\chapter{\CAST@label@resume}}
   {}
   
 \newenvironment{resumesection}[1]
@@ -617,49 +524,13 @@
    {\endlist}
    
 \renewenvironment{thanks}
-  {
-  \ifCLASSOPTIONbachelor
-    \chapter*{\CAST@label@thanks} 
-  \else
-    \chapter{\CAST@label@thanks} 
-  \fi
-    \label{lastpage}}
+  {\chapter{\CAST@label@thanks}}
   {}
   
 \newenvironment{symbolnote}
-  {
-  \ifCLASSOPTIONbachelor
-    \chapter*{\CAST@label@symbolnote}
-  \else
-    \chapter{\CAST@label@symbolnote}
-  \fi
-  }
+  {\chapter{\CAST@label@symbolnote}}
   {} 
 
-
-\newenvironment{bigabstract}
-  {
-  \pagestyle{fancy}
-  \fancyhf{}
-  \fancyhead[L]{\small {\it \includegraphics[width=0.22\textwidth]{logo}}}  % 奇数页左页眉
-  \fancyhead[R]{\small {\it \CAST@value@titlemark}}                   % 奇数页左页眉
-  \fancyfoot[C]{\small ~第~{\bf\thepage}~页~共~{\pageref{bigabstractlast}}~页~}      % 页脚
-
-
-  \fancypagestyle{plain}{% 设置开章页页眉页脚风格(只有页码作为页脚)
-    \fancyhf{}%
-    \fancyhead[L]{\small {\it \includegraphics[width=0.22\textwidth]{logo}}}  % 奇数页左页眉
-    \fancyhead[R]{\small {\it \CAST@value@titlemark}}                   % 奇数页左页眉
-    \fancyfoot[C]{\small ~第~{\bf\thepage}~页~共~{\pageref{bigabstractlast}}~页~}      % 页脚
-    %\renewcommand{\headrulewidth}{0pt}%
-    %\renewcommand{\footrulewidth}{0pt}%
-    }
-
-
-  \chapter*{\normalfont\zihao{3}\bf\textsc\CAST@value@englishtitle\vskip 20pt}
-  \setcounter{page}{1}
-  }
-  {\label{bigabstractlast}}
 
 \setcounter{secnumdepth}{4}  % 章节编号深度 (part 对应 -1)
 \setcounter{tocdepth}{2}     % 目录深度 (part 对应 -1)
